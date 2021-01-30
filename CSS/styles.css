@@ -1,0 +1,235 @@
+/*========================
+              Body and Global
+          ========================*/
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+}
+body {
+  background: black;
+}
+/*=======================
+                Top/Header
+          =======================*/
+
+header {
+  display: flex;
+  background-color: black;
+  opacity: 0.7;
+  width: 100%;
+}
+
+#name {
+  color: black;
+  padding-left: 1%;
+  padding-top: 1.8%;
+  display: flex;
+  flex-direction: column;
+  font-size: 4rem;
+  color: gold;
+}
+#headimg {
+  width: 100%;
+}
+header ul {
+  display: flex;
+  margin-left: 11%;
+  margin-top: 7%;
+}
+header ul li {
+  margin: auto 5%;
+  font-size: 6rem;
+}
+.menu1 {
+  margin-left: 10%;
+  font-size: 2rem;
+  margin-top: 8%;
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  height: fit-content;
+}
+
+.menu1 a:hover,
+.menu a:hover {
+  font-size: 2.2rem;
+  z-index: 1;
+  position: relative;
+
+  color: gold;
+}
+
+.hr {
+  border: solid gold;
+  margin: 1% auto 5%;
+
+  width: 90%;
+}
+.menutext {
+  width: 10%;
+}
+/*=======================
+                Body
+        =======================*/
+.bodytitle {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.bodytitle p {
+  color: gold;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+/*============================
+              Bottom/Footer
+         ==========================*/
+
+footer {
+  justify-content: space-evenly;
+  display: flex;
+  margin-top: 10%;
+}
+
+.fab {
+  width: 100%;
+  font-size: 4rem;
+}
+i:hover {
+  transform: rotate(360deg);
+}
+i {
+  transition: 0.8s;
+  transition-property: transform;
+}
+.fa-facebook {
+  color: rgb(66, 103, 178);
+  font-size: 6rem;
+
+  margin: 5%;
+}
+.fa-twitter {
+  color: #00acee;
+}
+.fa-instagram {
+  padding: 10%;
+  width: 120%;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  border-radius: 20%;
+}
+
+.fa-youtube {
+  color: #ff0000;
+}
+
+.faceb {
+  background: white;
+  display: inline-block;
+  background: white;
+  border-radius: 50%;
+  box-sizing: content-box;
+}
+.icons {
+  display: flex;
+  flex: left;
+  margin-right: 10%;
+  justify-content: space-evenly;
+  width: 50%;
+}
+.icons a {
+  margin: auto 5%;
+}
+.menu {
+  width: 50%;
+  padding-bottom: 1.5%;
+  display: flex;
+}
+.menu div {
+  margin: auto 7%;
+  font-size: 2rem;
+  width: 10%;
+}
+.i {
+  background-color: white;
+  color: white;
+}
+/*
+.face {
+  background-color: white;
+  border-radius: 50%;
+}
+*/
+
+.span {
+  background-color: white;
+  z-index: -1;
+  width: 6.4%;
+  height: 91.5px;
+  border-radius: 50%;
+  padding: 2%;
+  position: absolute;
+
+  left: 59px;
+  top: 701px;
+}
+
+#bar {
+  border: solid white;
+  position: absolute;
+  height: 100px;
+
+  border-radius: 50%;
+  width: 100px;
+  bottom: -10;
+  z-index: 10;
+}
+.hc {
+  color: gold;
+  font-size: 4rem;
+}
+#h,
+#c {
+  position: absolute;
+}
+#h {
+  top: 10%;
+  left: 15%;
+}
+#c {
+  left: 34%;
+  top: 30px;
+}
+/*================================
+        Merchandise Page
+================================*/
