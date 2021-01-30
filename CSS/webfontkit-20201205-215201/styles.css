@@ -1,0 +1,940 @@
+/*========================
+              Body and Global
+          ========================*/
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  /* font-family: "Josefin Sans", sans-serif; */
+  /* color: white; */
+  font-family: "a_attack_graffitiregular";
+}
+
+.fa-bars {
+  position: absolute;
+  bottom: 0;
+  display: none;
+  /* This is weird, the bars were causing a padding like area at the top of the page, and doing this makes it go away */
+}
+.body {
+  padding-top: 0;
+}
+.Bod {
+  display: none;
+  padding-top: 0;
+}
+.popup {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  background: rgba(25, 98, 0, 0.5);
+  align-items: center;
+}
+.popup p {
+  height: 49.2rem;
+  margin: 20% 5px auto 15px;
+  font-size: 2rem;
+}
+.fa-times {
+  font-size: 3rem;
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  cursor: pointer;
+}
+.inside {
+  text-align: center;
+  display: flex;
+  padding: 3rem 1rem;
+  background-color: green;
+  height: 300px;
+}
+.inside img {
+  width: 50%;
+  border-radius: 0.25rem;
+  height: 400px;
+  margin: auto;
+}
+
+.begin {
+  animation: pass2 0.1s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+  position: relative;
+
+  text-align: center;
+}
+.begin button {
+  background-color: black;
+  padding: 5px 10px;
+  position: absolute;
+  left: 25px;
+}
+.begin button i {
+  transform: rotate(0deg);
+}
+.begin p span {
+  font-size: 0;
+  margin: auto 1rem;
+}
+.its {
+  transform: translate(-400px);
+  animation: its 4s;
+  animation-delay: 0.7s;
+  animation-fill-mode: forwards;
+  position: absolute;
+}
+.your {
+  transform: translate(1000px);
+  animation: your 4s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  position: absolute;
+}
+.your2 {
+  animation-delay: 5s;
+}
+.its2 {
+  animation-delay: 4s;
+}
+#favor {
+  transform: translate(-1600px, 300px);
+  animation: favorite 4s;
+  animation-delay: 1.2s;
+  animation-fill-mode: forwards;
+  position: absolute;
+  font-size: 10rem;
+}
+.fav2 {
+  transform: translate(-1600px, 300px);
+  animation: fav2 4s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+  position: absolute;
+  font-size: 10rem;
+  color: yellow;
+}
+#uncle {
+  transform: translate(-300px, -300px);
+  font-size: 10rem;
+  animation: unk 2s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  position: absolute;
+  color: white;
+}
+.cuzzo {
+  transform: translate(-300px, -300px);
+  font-size: 9rem;
+  animation: unk2 2s;
+  animation-delay: 7s;
+  animation-fill-mode: forwards;
+  position: absolute;
+}
+@keyframes unk2 {
+  0% {
+    transform: translate(-300px, -300px);
+  }
+  50% {
+    transform: translate(300px, 200px);
+    font-size: 15rem;
+  }
+  100% {
+    font-size: 10rem;
+    transform: translate(300px, 1500px);
+  }
+}
+@keyframes unk {
+  0% {
+    transform: translate(-300px, -300px);
+  }
+  50% {
+    transform: translate(-300px, 200px);
+    font-size: 15rem;
+  }
+  100% {
+    transform: translate(0, 1500px);
+  }
+}
+@keyframes fav2 {
+  0% {
+    transform: translate(-1600px, 300px);
+  }
+  50% {
+    transform: translate(350px, 300px);
+  }
+
+  100% {
+    transform: translate(-350px, 1500px);
+  }
+}
+
+@keyframes favorite {
+  0% {
+    transform: translate(-1600px, 300px);
+  }
+  50% {
+    transform: translate(-350px, 300px);
+  }
+
+  100% {
+    transform: translate(-350px, 1500px);
+  }
+}
+@keyframes your {
+  0% {
+    font-size: 0;
+  }
+  50% {
+    font-size: 10rem;
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 1500px);
+  }
+}
+@keyframes its {
+  0% {
+    font-size: 0;
+  }
+  50% {
+    transform: translate(-400px);
+    font-size: 10rem;
+  }
+  100% {
+    transform: translate(0, 1500px);
+  }
+}
+
+@font-face {
+  font-family: "a_attack_graffitiregular";
+  src: url("aattackgraffiti-webfont.woff2") format("woff2"),
+    url("aattackgraffiti-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "coolregular";
+  src: url("dastreets-8lmz-webfont.woff2") format("woff2"),
+    url("dastreets-8lmz-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.body {
+  margin: 0;
+  padding: 15px 0 0 0;
+  background-color: black;
+  font-family: "a_attack_graffitiregular";
+}
+/*=======================
+                Snow
+          =======================*/
+
+.snowflake {
+  color: #fff;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+  text-shadow: 0 0 5px #000;
+}
+
+@-webkit-keyframes snowflakes-fall {
+  0% {
+    top: -10%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+@-webkit-keyframes snowflakes-shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(80px);
+    transform: translateX(80px);
+  }
+}
+@keyframes snowflakes-fall {
+  0% {
+    top: -10%;
+  }
+  100% {
+    top: 140%;
+  }
+}
+@keyframes snowflakes-shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+}
+.snowflake {
+  position: absolute;
+  top: -10%;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: silver;
+  z-index: 9999;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+  -webkit-animation-name: snowflakes-fall, snowflakes-shake;
+  -webkit-animation-duration: 20s, 7s;
+  -webkit-animation-timing-function: linear, ease-in-out;
+  -webkit-animation-iteration-count: infinite, infinite;
+  -webkit-animation-play-state: running, running;
+  animation-name: snowflakes-fall, snowflakes-shake;
+  animation-duration: 20s, 7s;
+  animation-timing-function: linear, ease-in-out;
+  animation-iteration-count: infinite, infinite;
+  animation-play-state: running, running;
+}
+.snowflake:nth-of-type(0) {
+  left: 1%;
+  -webkit-animation-delay: 0s, 0s;
+  animation-delay: 0s, 0s;
+}
+.snowflake:nth-of-type(1) {
+  left: 10%;
+  -webkit-animation-delay: 1s, 1s;
+  animation-delay: 1s, 1s;
+}
+.snowflake:nth-of-type(2) {
+  left: 20%;
+  -webkit-animation-delay: 6s, 0.5s;
+  animation-delay: 6s, 0.5s;
+}
+.snowflake:nth-of-type(3) {
+  left: 30%;
+  -webkit-animation-delay: 4s, 2s;
+  animation-delay: 4s, 2s;
+}
+.snowflake:nth-of-type(4) {
+  left: 40%;
+  -webkit-animation-delay: 2s, 2s;
+  animation-delay: 2s, 2s;
+}
+.snowflake:nth-of-type(5) {
+  left: 50%;
+  -webkit-animation-delay: 8s, 3s;
+  animation-delay: 8s, 3s;
+}
+.snowflake:nth-of-type(6) {
+  left: 60%;
+  -webkit-animation-delay: 6s, 2s;
+  animation-delay: 6s, 2s;
+}
+.snowflake:nth-of-type(7) {
+  left: 70%;
+  -webkit-animation-delay: 2.5s, 1s;
+  animation-delay: 2.5s, 1s;
+}
+.snowflake:nth-of-type(8) {
+  left: 80%;
+  -webkit-animation-delay: 1s, 0s;
+  animation-delay: 1s, 0s;
+}
+.snowflake:nth-of-type(9) {
+  left: 90%;
+  -webkit-animation-delay: 3s, 1.5s;
+  animation-delay: 3s, 1.5s;
+}
+.snowflake:nth-of-type(10) {
+  left: 25%;
+  -webkit-animation-delay: 2s, 0s;
+  animation-delay: 2s, 0s;
+}
+.snowflake:nth-of-type(11) {
+  left: 65%;
+  -webkit-animation-delay: 4s, 2.5s;
+  animation-delay: 4s, 2.5s;
+}
+.snowflake:nth-of-type(12) {
+  left: 1%;
+  -webkit-animation-delay: 10s, 0s;
+  animation-delay: 10s, 0s;
+}
+.snowflake:nth-of-type(13) {
+  left: 10%;
+  -webkit-animation-delay: 11s, 1s;
+  animation-delay: 11s, 1s;
+}
+.snowflake:nth-of-type(14) {
+  left: 20%;
+  -webkit-animation-delay: 13s, 0.5s;
+  animation-delay: 13s, 0.5s;
+}
+.snowflake:nth-of-type(15) {
+  left: 30%;
+  -webkit-animation-delay: 15s, 2s;
+  animation-delay: 15s, 2s;
+}
+.snowflake:nth-of-type(16) {
+  left: 40%;
+  -webkit-animation-delay: 11s, 2s;
+  animation-delay: 11s, 2s;
+}
+.snowflake:nth-of-type(17) {
+  left: 50%;
+  -webkit-animation-delay: 10s, 3s;
+  animation-delay: 10s, 3s;
+}
+.snowflake:nth-of-type(18) {
+  left: 60%;
+  -webkit-animation-delay: 12s, 2s;
+  animation-delay: 12s, 2s;
+}
+.snowflake:nth-of-type(19) {
+  left: 70%;
+  -webkit-animation-delay: 14s, 1s;
+  animation-delay: 14s, 1s;
+}
+.snowflake:nth-of-type(20) {
+  left: 80%;
+  -webkit-animation-delay: 16s, 0s;
+  animation-delay: 16s, 0s;
+}
+.snowflake:nth-of-type(21) {
+  left: 90%;
+  -webkit-animation-delay: 9s, 1.5s;
+  animation-delay: 9s, 1.5s;
+}
+.snowflake:nth-of-type(22) {
+  left: 25%;
+  -webkit-animation-delay: 10s, 0s;
+  animation-delay: 10s, 0s;
+}
+.snowflake:nth-of-type(23) {
+  left: 65%;
+  -webkit-animation-delay: 9s, 2.5s;
+  animation-delay: 9s, 2.5s;
+}
+.snowflake:nth-of-type(24) {
+  left: 30%;
+  -webkit-animation-delay: 15s, 2s;
+  animation-delay: 18s, 2s;
+}
+.snowflake:nth-of-type(25) {
+  left: 40%;
+  -webkit-animation-delay: 11s, 2s;
+  animation-delay: 20s, 2s;
+}
+.snowflake:nth-of-type(26) {
+  left: 50%;
+  -webkit-animation-delay: 10s, 3s;
+  animation-delay: 10s, 3s;
+}
+.snowflake:nth-of-type(27) {
+  left: 60%;
+  -webkit-animation-delay: 12s, 2s;
+  animation-delay: 20s, 2s;
+}
+.snowflake:nth-of-type(28) {
+  left: 70%;
+  -webkit-animation-delay: 14s, 1s;
+  animation-delay: 19s, 1s;
+}
+.snowflake:nth-of-type(29) {
+  left: 80%;
+  -webkit-animation-delay: 16s, 0s;
+  animation-delay: 17s, 0s;
+}
+.snowflake:nth-of-type(30) {
+  left: 90%;
+  -webkit-animation-delay: 9s, 1.5s;
+  animation-delay: 17s, 1.5s;
+}
+.snowflake:nth-of-type(31) {
+  left: 25%;
+  -webkit-animation-delay: 10s, 0s;
+  animation-delay: 18s, 0s;
+}
+.snowflake:nth-of-type(32) {
+  left: 65%;
+  -webkit-animation-delay: 9s, 2.5s;
+  animation-delay: 18s, 2.5s;
+}
+
+/*=======================
+    Top/Header for Merch
+  =======================*/
+.bgimg {
+  width: 100%;
+  margin: 0;
+}
+
+.merchhead {
+  text-align: center;
+  padding-top: 10rem;
+}
+.COMINGSOON {
+  font-size: 5rem;
+}
+/*=======================
+                Top/Header for Index
+          =======================*/
+
+.ulTop {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.7rem;
+  margin: -10px;
+}
+
+.ulTop li a {
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  margin: 0;
+  z-index: 100;
+}
+.ulTop li:hover > a {
+  font-size: 2rem;
+  background-color: rgba(192, 192, 192, 0.2);
+  border-radius: 20%;
+}
+.weird {
+  width: 100px;
+}
+/*=======================
+       Top Icons
+  =======================*/
+.iconsTop {
+  align-items: center;
+
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  bottom: 25px;
+}
+.iconsTop i {
+  font-size: 2rem;
+}
+.iconimg {
+  position: relative;
+}
+
+/*=======================
+                Body
+        =======================*/
+
+.bodytitle {
+  text-align: center;
+  margin-top: 10%;
+  /* font-family: "a_attack_graffitiregular"; */
+}
+
+.bodytitle p {
+  /* color: gold; */
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  font-family: "coolregular";
+  /* border: solid yellow; */
+}
+.watchbtn {
+  background-color: white;
+  color: black;
+  border-radius: 0.25rem;
+}
+.watchbtn i {
+  transform: rotate(0deg);
+}
+
+/*=====================
+      Carosel
+=====================*/
+.grafpic {
+  width: 100%;
+  z-index: 1000000;
+  height: 50rem;
+}
+.caroselsection {
+  background: rgb(249, 250, 55);
+  background: radial-gradient(
+    circle,
+    rgba(249, 250, 55, 1) 0%,
+    rgba(0, 0, 0, 1) 90%
+  );
+}
+span {
+  color: yellow;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.carousel-inner {
+  text-align: center;
+  margin-top: 5%;
+}
+/*=====================
+      Carosel Images
+=====================*/
+.caroselImg {
+  width: 20%;
+  border-radius: 50%;
+  margin-top: 5%;
+}
+.caroselImg2 {
+  width: 20%;
+  border-radius: 50%;
+  margin-top: 5%;
+}
+
+.me {
+  width: 20%;
+  border-radius: 50%;
+  margin-top: 5%;
+}
+
+.carousel-item {
+  text-align: center;
+  height: 700px;
+}
+.carousel-inner p {
+  text-align: center;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 5%;
+}
+
+/*============================
+              Bottom/Footer
+         ==========================*/
+
+.footer {
+  justify-content: space-evenly;
+  display: flex;
+  margin-top: 10%;
+  padding: 100% auto;
+}
+.bottomMenu {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+  padding-top: 20px;
+}
+.bottomMenu div a {
+  color: white;
+  text-decoration: none;
+}
+.bottomMenu div a:hover {
+  color: yellow;
+}
+
+/*============================
+              Social Media
+         ==========================*/
+
+.fab {
+  width: 100%;
+  font-size: 2rem;
+}
+.icons i:hover {
+  transform: rotate(360deg);
+}
+i {
+  transition: 0.8s;
+  transition-property: transform;
+}
+.fa-facebook::before {
+  font-size: 2rem;
+}
+
+.fa-facebook {
+  color: rgb(66, 103, 178);
+
+  margin: 5%;
+  transition: 1s;
+  text-decoration: none;
+}
+.fa-facebook:hover {
+  transform: rotate(360deg);
+}
+.fa-twitter {
+  color: #00acee;
+}
+.fa-instagram {
+  font-size: 2rem;
+  padding: 10%;
+  width: 120%;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  border-radius: 20%;
+}
+
+.fa-youtube {
+  color: #ff0000;
+}
+
+.faceb {
+  background: white;
+  display: inline-block;
+  background: white;
+  border-radius: 50%;
+  box-sizing: content-box;
+  list-style: none;
+}
+
+.icons {
+  display: flex;
+  flex: left;
+
+  justify-content: space-evenly;
+
+  padding-top: 1%;
+}
+.iconsBot {
+  margin-right: 10%;
+  width: 50%;
+}
+.icons a {
+  margin: auto 5%;
+}
+
+/*============================
+              Coin
+  ==========================*/
+
+#bar {
+  position: absolute;
+}
+.bar {
+  background-color: black;
+  border: solid white;
+  bottom: -10;
+  height: 100px;
+  transition: 20s;
+  border-radius: 50%;
+  width: 100px;
+
+  z-index: 10;
+
+  animation-fill-mode: forwards;
+}
+
+@keyframes coin {
+  0% {
+    color: black;
+    background: #ba8b02; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #181818, #ba8b02);
+    color: black;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #181818,
+      #ba8b02
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  100% {
+    color: black;
+    background: #ba8b02; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #181818,
+      #ba8b02
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #181818,
+      #ba8b02
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+}
+#bar:hover .bar {
+  transform: rotateY(5040deg);
+  animation: coin 20s;
+}
+
+.hc {
+  color: gold;
+  font-size: 4rem;
+}
+#h,
+#c {
+  position: absolute;
+  font-family: "coolregular";
+}
+
+#h {
+  top: -18%;
+  left: 20%;
+}
+#c {
+  left: 37%;
+  top: 15%;
+}
+
+#bar:hover .hc {
+  color: black;
+}
+/*================================
+        Merchandise Page
+================================*/
+/*================================
+        Mobile Design
+================================*/
+.viddiv {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+.viddiv iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+@media screen and (max-width: 480px) {
+  .begin {
+    display: none;
+  }
+  #bod {
+    display: block;
+  }
+  .bgimg {
+    width: 100%;
+    margin-top: 0;
+    height: 20rem;
+  }
+  .bottomMenu {
+    display: none;
+    margin: 0;
+  }
+  .iconsBot {
+    width: 100%;
+    margin: 0 auto 60px;
+    align-items: center;
+    text-align: center;
+  }
+  .bar {
+    display: none;
+  }
+  .snowflakes {
+    display: none;
+  }
+  .grafpic {
+    height: 20rem;
+    margin: auto auto;
+  }
+  .carousel {
+    height: 20rem;
+  }
+  .carousel-item {
+    height: auto;
+  }
+  .carousel-item p {
+    font-size: 0.25rem;
+  }
+  .carousel span {
+    font-size: 1rem;
+  }
+  .fa-bars {
+    display: block;
+    color: red;
+    font-size: 2rem;
+    position: absolute;
+    z-index: 2;
+    right: 5px;
+    top: 0;
+  }
+  .ulTop {
+    flex-direction: column;
+    position: absolute;
+
+    display: block;
+    margin-left: 1px;
+    z-index: 2;
+    top: 5px;
+    padding: 5.5px;
+    transform: translate(-100%);
+    transition: 0.5s;
+    height: 100%;
+  }
+  .ulTop li {
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 0.8px;
+  }
+  .ulTop li a {
+    position: relative;
+    display: block;
+    font-size: 1.9rem;
+    border: grey solid;
+    padding: 10px auto auto;
+    margin-top: 10px;
+    color: yellow;
+    background-color: black;
+  }
+  .iconsTop {
+    display: none;
+  }
+  .bod {
+    padding: 0;
+  }
+  .body {
+    padding: 0;
+  }
+  .tog {
+    transform: translate(0);
+  }
+  .fa-bars {
+    transform: rotate(0);
+  }
+  .relative {
+    position: relative;
+    z-index: 1000000000;
+    background-color: red;
+  }
+  .bodytitle p {
+    line-height: 3rem;
+    margin-bottom: 30px;
+    width: 100%;
+    letter-spacing: 5px;
+    color: white;
+  }
+  .goto {
+    font-size: 2rem;
+    color: yellow;
+  }
+  .first {
+    color: grey;
+  }
+}
