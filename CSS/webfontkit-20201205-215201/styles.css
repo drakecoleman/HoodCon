@@ -67,6 +67,7 @@
 .begin p span {
   font-size: 0;
   margin: auto 1rem;
+  color: yellow;
 }
 .its {
   transform: translate(-400px);
@@ -121,6 +122,7 @@
   animation-delay: 7s;
   animation-fill-mode: forwards;
   position: absolute;
+  color: grey;
 }
 @keyframes unk2 {
   0% {
