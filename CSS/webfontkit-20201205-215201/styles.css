@@ -579,16 +579,14 @@
   position: absolute;
   margin: 0;
   z-index: 100;
-  transition: 0.3s;
+  transition: 0.7s;
+  padding: 5px;
 }
 .ulTop li:hover > a {
-  font-size: 2rem;
-  /* background-color: rgba(192, 192, 192, 0.2); */
   background-color: black;
   color: white;
   border-radius: 20%;
   border: solid yellow;
-  padding: 5px;
 }
 .weird {
   width: 100px;
