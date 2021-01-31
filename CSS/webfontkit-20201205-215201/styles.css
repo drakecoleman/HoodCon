@@ -698,7 +698,7 @@
     rgba(0, 0, 0, 1) 90%
   );
 }
-span {
+.caroselsection span {
   color: yellow;
   font-size: 2rem;
   font-weight: bold;
@@ -877,31 +877,12 @@ i {
   border-radius: 50%;
   width: 100px;
   position: relative;
-
   z-index: 10;
-
   animation-fill-mode: forwards;
 }
 
-/* @keyframes coin {
-  0% {
-    color: black;
-    background: #ba8b02;
-    background: -webkit-linear-gradient(to right, #181818, #ba8b02);
-    color: black;
-
-    background: linear-gradient(to right, #181818, #ba8b02);
-  }
-  100% {
-    color: black;
-    background: #ba8b02;
-    background: -webkit-linear-gradient(to right, #181818, #ba8b02);
-    background: linear-gradient(to right, #181818, #ba8b02);
-  }
-} */
 #bar:hover .bar {
   transform: rotateY(5040deg);
-  /* animation: coin 20s; */
   background: linear-gradient(315deg, #eeff00 0%, #e43326 74%);
   color: black;
 }
@@ -1079,12 +1060,39 @@ i {
     color: grey;
   }
   .bodytitle h3 {
-    font-size: 1rem;
+    font-size: 2rem;
+    font-weight: bolder;
   }
   .hoodspan,
   .first,
   .goto {
     font-size: 3rem;
     line-height: 7rem;
+  }
+  .caroselsection {
+    position: relative;
+  }
+  .btnpadd {
+    position: relative;
+
+    border: solid red;
+  }
+  .caroselsection span {
+    position: absolute;
+    top: 10px;
+  }
+  .next {
+    left: -2px;
+    letter-spacing: 5px;
+  }
+  .rcon {
+    left: 50px;
+  }
+  .prev {
+    right: -65px;
+    letter-spacing: 5px;
+  }
+  .pcon {
+    right: 50px;
   }
 }
