@@ -614,10 +614,11 @@
   width: 100%;
 }
 .hoodspan {
-  font-size: 3rem;
+  font-size: 6rem;
   font-family: "a_attack_graffitiregular";
 }
 .goto {
+  font-size: 6rem;
   font-family: "a_attack_graffitiregular";
 }
 .first {
@@ -639,7 +640,7 @@
   overflow: visible;
   font-family: "Josefin Sans", sans-serif;
   font-size: 5rem;
-  line-height: 8rem;
+  line-height: 10rem;
   margin-bottom: 1rem;
   width: 100%;
   letter-spacing: 5px;
@@ -647,12 +648,25 @@
 }
 .break {
   margin: auto;
-  border: solid rgb(221, 156, 14);
+  border-top: solid rgb(221, 156, 14);
   width: 30%;
   margin: 5rem auto 10rem;
+  border-radius: 0.25rem;
+  height: 10px;
+}
+.dos {
+  width: 70%;
 }
 .bodytitle h3 {
-  color: white;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 8rem;
   margin: 5rem auto;
 }
@@ -731,8 +745,13 @@ span {
 .footer {
   justify-content: space-evenly;
   display: flex;
-  margin-top: 10%;
+  margin: 5rem auto;
   padding: 100% auto;
+  border-top: solid rgb(221, 156, 14);
+  padding-top: 50px;
+  border-width: thick;
+  border-radius: 0.25rem;
+  width: 95%;
 }
 .bottomMenu {
   width: 50%;
@@ -751,7 +770,7 @@ span {
 
 /*============================
               Social Media
-         ==========================*/
+ ==========================*/
 
 .fab {
   width: 100%;
@@ -857,48 +876,40 @@ i {
   transition: 20s;
   border-radius: 50%;
   width: 100px;
+  position: relative;
 
   z-index: 10;
 
   animation-fill-mode: forwards;
 }
 
-@keyframes coin {
+/* @keyframes coin {
   0% {
     color: black;
-    background: #ba8b02; /* fallback for old browsers */
+    background: #ba8b02;
     background: -webkit-linear-gradient(to right, #181818, #ba8b02);
     color: black;
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #181818,
-      #ba8b02
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background: linear-gradient(to right, #181818, #ba8b02);
   }
   100% {
     color: black;
-    background: #ba8b02; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #181818,
-      #ba8b02
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #181818,
-      #ba8b02
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #ba8b02;
+    background: -webkit-linear-gradient(to right, #181818, #ba8b02);
+    background: linear-gradient(to right, #181818, #ba8b02);
   }
-}
+} */
 #bar:hover .bar {
   transform: rotateY(5040deg);
-  animation: coin 20s;
+  /* animation: coin 20s; */
+  background: linear-gradient(315deg, #eeff00 0%, #e43326 74%);
+  color: black;
 }
 
 .hc {
   color: gold;
   font-size: 4rem;
+  text-shadow: #000;
 }
 #h,
 #c {
@@ -907,7 +918,7 @@ i {
 }
 
 #h {
-  top: -18%;
+  top: -15%;
   left: 20%;
 }
 #c {
