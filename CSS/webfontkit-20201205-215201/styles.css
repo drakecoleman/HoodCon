@@ -1081,10 +1081,10 @@ i {
   .bodytitle h3 {
     font-size: 1rem;
   }
-  .hoodspan {
-    font-size: 1rem;
-  }
-  .first {
-    font-size: 1rem;
+  .hoodspan,
+  .first,
+  .goto {
+    font-size: 3rem;
+    line-height: 7rem;
   }
 }
