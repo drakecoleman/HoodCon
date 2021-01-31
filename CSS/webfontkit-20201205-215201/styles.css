@@ -1069,12 +1069,22 @@ i {
     width: 100%;
     letter-spacing: 5px;
     color: white;
+    font-size: 1rem;
   }
   .goto {
-    font-size: 2rem;
+    font-size: 1rem;
     color: yellow;
   }
   .first {
     color: grey;
+  }
+  .bodytitle h3 {
+    font-size: 1rem;
+  }
+  .hoodspan {
+    font-size: 1rem;
+  }
+  .first {
+    font-size: 1rem;
   }
 }
