@@ -11,46 +11,77 @@
   /* color: white; */
   font-family: "a_attack_graffitiregular";
 }
+::-webkit-scrollbar {
+  width: 20px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+/*-------------------------
+         Fonts  
+--------------------------*/
+@font-face {
+  font-family: "a_attack_graffitiregular";
+  src: url("aattackgraffiti-webfont.woff2") format("woff2"),
+    url("aattackgraffiti-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "coolregular";
+  src: url("dastreets-8lmz-webfont.woff2") format("woff2"),
+    url("dastreets-8lmz-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 .fa-bars {
   position: absolute;
   bottom: 0;
   display: none;
   /* This is weird, the bars were causing a padding like area at the top of the page, and doing this makes it go away */
 }
-.body {
-  padding-top: 0;
-}
 .Bod {
   display: none;
-  padding-top: 0;
+  background-color: black;
 }
 
-.fa-times {
-  font-size: 3rem;
+/* -----------------------------------
+              Load Screen
+------------------------------------- */
+
+.body {
+  background-color: black;
+}
+.begin button,
+.its,
+.your,
+#favor,
+.fav2,
+#uncle,
+#cuzzo {
   position: absolute;
-  right: 25px;
-  top: 20px;
-  cursor: pointer;
-}
-.inside {
-  text-align: center;
-  display: flex;
-  padding: 3rem 1rem;
-  background-color: green;
-  height: 300px;
-}
-.inside img {
-  width: 50%;
-  border-radius: 0.25rem;
-  height: 400px;
-  margin: auto;
+  animation-fill-mode: forwards;
+  color: yellow;
 }
 
 .begin {
   animation: pass2 0.1s;
   animation-delay: 5s;
-  animation-fill-mode: forwards;
+
   position: relative;
 
   text-align: center;
@@ -58,7 +89,6 @@
 .begin button {
   background-color: black;
   padding: 5px 10px;
-  position: absolute;
   left: 25px;
 }
 .begin button i {
@@ -67,75 +97,44 @@
 .begin p span {
   font-size: 0;
   margin: auto 1rem;
-  color: yellow;
 }
 .its {
   transform: translate(-400px);
   animation: its 4s;
   animation-delay: 0.7s;
-  animation-fill-mode: forwards;
-  position: absolute;
 }
 .your {
   transform: translate(1000px);
   animation: your 4s;
   animation-delay: 1s;
-  animation-fill-mode: forwards;
-  position: absolute;
 }
 .your2 {
-  animation-delay: 5s;
+  animation-delay: 4s;
 }
 .its2 {
   animation-delay: 4s;
 }
 #favor {
   transform: translate(-1600px, 300px);
-  animation: favorite 4s;
+  animation: favorite 7s;
   animation-delay: 1.2s;
-  animation-fill-mode: forwards;
-  position: absolute;
+
   font-size: 10rem;
 }
-.fav2 {
-  transform: translate(-1600px, 300px);
-  animation: fav2 4s;
-  animation-delay: 5s;
-  animation-fill-mode: forwards;
-  position: absolute;
-  font-size: 10rem;
-  color: yellow;
+
+#uncle,
+#cuzzo {
+  transform: translate(-300px, -350px);
+  font-size: 15rem;
+  animation: unk 2s;
 }
 #uncle {
-  transform: translate(-300px, -300px);
-  font-size: 10rem;
-  animation: unk 2s;
   animation-delay: 3s;
-  animation-fill-mode: forwards;
-  position: absolute;
-  color: white;
 }
-.cuzzo {
-  transform: translate(-300px, -300px);
-  font-size: 9rem;
-  animation: unk2 2s;
+#cuzzo {
   animation-delay: 7s;
-  animation-fill-mode: forwards;
-  position: absolute;
-  color: grey;
-}
-@keyframes unk2 {
-  0% {
-    transform: translate(-300px, -300px);
-  }
-  50% {
-    transform: translate(300px, 200px);
-    font-size: 15rem;
-  }
-  100% {
-    font-size: 10rem;
-    transform: translate(300px, 1500px);
-  }
+  color: yellow;
+  z-index: 1000;
 }
 @keyframes unk {
   0% {
@@ -143,10 +142,9 @@
   }
   50% {
     transform: translate(-300px, 200px);
-    font-size: 15rem;
   }
   100% {
-    transform: translate(0, 1500px);
+    transform: translate(-300px, 1500px);
   }
 }
 @keyframes fav2 {
@@ -166,7 +164,16 @@
   0% {
     transform: translate(-1600px, 300px);
   }
+  15% {
+    transform: translate(-350px, 300px);
+  }
+
   50% {
+    transform: translate(-350px, 1500px);
+  }
+  74% {
+  }
+  90% {
     transform: translate(-350px, 300px);
   }
 
@@ -199,26 +206,602 @@
   }
 }
 
-@font-face {
-  font-family: "a_attack_graffitiregular";
-  src: url("aattackgraffiti-webfont.woff2") format("woff2"),
-    url("aattackgraffiti-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "coolregular";
-  src: url("dastreets-8lmz-webfont.woff2") format("woff2"),
-    url("dastreets-8lmz-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+/*=======================
+    Top/Header for Merch
+  =======================*/
+.bgimg {
+  width: 100%;
+  margin: 0;
 }
 
-.body {
+.merchhead {
+  text-align: center;
+  padding-top: 10rem;
+}
+.COMINGSOON {
+  font-size: 5rem;
+}
+/*=======================
+                Top/Header for Index
+          =======================*/
+
+header {
+  position: absolute;
+  top: 0;
+  display: flex;
+  width: 100%;
+  margin-top: 25px;
+}
+.ulTop {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.7rem;
+  margin: -10px;
+}
+
+.ulTop li a {
+  text-decoration: none;
+  color: black;
+  position: absolute;
   margin: 0;
-  padding: 15px 0 0 0;
+  z-index: 100;
+  transition: 0.7s;
+  padding: 5px;
+}
+.ulTop li:hover > a {
   background-color: black;
+  color: white;
+  border-radius: 20%;
+  border: solid grey;
+}
+.weird {
+  width: 100px;
+}
+/*=======================
+       Top Icons
+  =======================*/
+.iconsTop {
+  align-items: center;
+  background-color: transparent;
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  bottom: 25px;
+}
+.iconsTop i {
+  font-size: 2rem;
+}
+.iconimg {
+  position: relative;
+}
+.iconsTop div:hover > a i {
+  transform: rotate(360deg);
+  /* border: solid black;
+  border-style: double;
+  border-width: 0.5rem;
+  border-radius: 0.25rem; */
+}
+/* .iconsTop div:hover {
+  background-color: black;
+  border-radius: 0.25rem;
+  width: 3rem;
+} */
+
+/*=======================
+                Body
+        =======================*/
+
+.bodytitle {
+  text-align: center;
+  margin-top: 10%;
+  width: 100%;
+}
+.hoodspan {
+  font-size: 6rem;
   font-family: "a_attack_graffitiregular";
+}
+.goto {
+  font-size: 6rem;
+  font-family: "a_attack_graffitiregular";
+}
+.first {
+  padding: 30px;
+  font-size: 7rem;
+  background-color: #fdb813;
+  background-image: linear-gradient(315deg, #eeff00 0%, #e43326 74%);
+  font-family: "a_attack_graffitiregular";
+  text-decoration: underline;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 100%;
+}
+
+.bodytitle p {
+  color: white;
+  text-align: center;
+  width: 50%;
+  overflow: visible;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 5rem;
+  line-height: 10rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  letter-spacing: 5px;
+  color: white;
+}
+.break {
+  margin: auto;
+  border-top: solid rgb(221, 156, 14);
+  width: 30%;
+  margin: 5rem auto 10rem;
+  border-radius: 0.25rem;
+  height: 10px;
+}
+.dos {
+  width: 70%;
+}
+.bodytitle h3 {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 8rem;
+  margin: 5rem auto;
+}
+.viddiv iframe {
+  z-index: 3;
+}
+.watchbtn {
+  background-color: white;
+  color: black;
+  border-radius: 0.25rem;
+}
+.watchbtn i {
+  transform: rotate(0deg);
+}
+
+/*=====================
+      Carosel
+=====================*/
+.grafpic {
+  width: 100%;
+  z-index: 1000000;
+  height: 50rem;
+}
+
+.caroselsection span {
+  color: yellow;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.carousel-inner {
+  text-align: center;
+  margin-top: 5%;
+}
+.caroselsection .carousel-control-prev,
+.caroselsection .carousel-control-next {
+  opacity: 1;
+}
+/*=====================
+      Carosel Images
+=====================*/
+.caroselImg {
+  width: 20%;
+  border-radius: 50%;
+  margin-top: 5%;
+}
+.caroselImg2 {
+  width: 20%;
+  border-radius: 50%;
+  margin-top: 5%;
+}
+
+.me {
+  width: 20%;
+  border-radius: 50%;
+  margin-top: 5%;
+}
+
+.carousel-item {
+  text-align: center;
+  height: 700px;
+  display: flex;
+  flex-direction: row;
+}
+.carousel-item h2 {
+  font-size: 3rem;
+  font-family: "Josefin Sans", sans-serif;
+  margin: 2rem auto;
+  background-color: black;
+  color: white;
+  width: fit-content;
+}
+.carousel-inner p {
+  text-align: center;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 5%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 30%;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+}
+.col {
+  border: solid red;
+}
+
+/*============================
+              Bottom/Footer
+         ==========================*/
+
+.footer {
+  justify-content: space-evenly;
+  display: flex;
+  margin: 5rem auto;
+  padding: 100% auto;
+  border-top: solid rgb(221, 156, 14);
+  padding-top: 50px;
+  border-width: thick;
+  border-radius: 0.25rem;
+  width: 95%;
+}
+.bottomMenu {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+  padding-top: 20px;
+}
+.bottomMenu div a {
+  color: white;
+  text-decoration: none;
+}
+.bottomMenu div a:hover {
+  color: yellow;
+}
+
+/*============================
+              Social Media
+ ==========================*/
+
+.fab {
+  width: 100%;
+  font-size: 2rem;
+}
+
+i {
+  transition: 0.8s;
+}
+.fa-facebook::before {
+  font-size: 2rem;
+}
+
+.fa-facebook {
+  color: rgb(66, 103, 178);
+
+  margin: 5%;
+  transition: 1s;
+  text-decoration: none;
+}
+.dove:hover > a i {
+  transform: rotate(360deg);
+}
+.fa-twitter {
+  color: #00acee;
+}
+.fa-instagram {
+  font-size: 2rem;
+  padding: 10%;
+  width: 120%;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  border-radius: 20%;
+}
+
+.fa-youtube {
+  color: #ff0000;
+}
+
+.faceb {
+  background: white;
+  display: inline-block;
+  background: white;
+  border-radius: 50%;
+  box-sizing: content-box;
+  list-style: none;
+}
+
+.icons {
+  display: flex;
+  flex: left;
+
+  justify-content: space-evenly;
+
+  padding-top: 1%;
+}
+.iconsBot {
+  margin-right: 10%;
+  width: 50%;
+}
+.icons a {
+  margin: auto 5%;
+}
+
+/*============================
+              Coin
+  ==========================*/
+
+#bar {
+  position: absolute;
+}
+.bar {
+  background-color: black;
+  border: solid white;
+  bottom: -10;
+  height: 100px;
+  transition: 20s;
+  border-radius: 50%;
+  width: 100px;
+  position: relative;
+  z-index: 10;
+  animation-fill-mode: forwards;
+}
+
+#bar:hover .bar {
+  transform: rotateY(5040deg);
+  background: linear-gradient(315deg, #eeff00 0%, #e43326 74%);
+  color: black;
+}
+
+.hc {
+  color: gold;
+  font-size: 4rem;
+  text-shadow: #000;
+}
+#h,
+#c {
+  position: absolute;
+  font-family: "coolregular";
+}
+
+#h {
+  top: -15%;
+  left: 20%;
+}
+#c {
+  left: 37%;
+  top: 15%;
+}
+
+#bar:hover .hc {
+  color: black;
+}
+/*================================
+        Merchandise Page
+================================*/
+/*================================
+        Mobile Design
+================================*/
+
+/* .popup {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  background: rgba(25, 98, 0, 0.5);
+  align-items: center;
+}
+.popup p {
+  height: 49.2rem;
+  margin: 20% 5px auto 15px;
+  font-size: 2rem;
+} */
+.viddiv {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+.viddiv iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+@media screen and (max-width: 480px) {
+  .begin {
+    display: none;
+  }
+  #bod {
+    display: block;
+  }
+  .bgimg {
+    width: 100%;
+    margin-top: 0;
+    height: 20rem;
+  }
+  .bottomMenu {
+    display: none;
+    margin: 0;
+  }
+  .iconsBot {
+    width: 100%;
+    margin: 0 auto 60px;
+    align-items: center;
+    text-align: center;
+  }
+  .bar {
+    display: none;
+  }
+  .snowflakes {
+    display: none;
+  }
+  .grafpic {
+    height: 20rem;
+    margin: auto auto;
+  }
+  .carousel {
+    height: 20rem;
+  }
+  .carousel-item {
+    height: auto;
+  }
+  .carousel-item p {
+    font-size: 0.25rem;
+    margin: 0;
+  }
+  .carousel-item h2 {
+    font-size: 0.25rem;
+    margin: 0;
+  }
+  .picky {
+    margin: 0;
+    width: fit-content;
+  }
+  .carousel span {
+    font-size: 1rem;
+  }
+  .fa-bars {
+    display: block;
+    color: red;
+    font-size: 2rem;
+    position: absolute;
+    z-index: 2;
+    right: 5px;
+    top: 0;
+  }
+  .ulTop {
+    flex-direction: column;
+    position: absolute;
+
+    display: block;
+    margin-left: 1px;
+    z-index: 2;
+    top: 5px;
+    padding: 5.5px;
+    transform: translate(-100%);
+    transition: 0.5s;
+    height: 100%;
+  }
+  .ulTop li {
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 0.8px;
+  }
+  .ulTop li a {
+    position: relative;
+    display: block;
+    font-size: 1.9rem;
+    border: grey solid;
+    padding: 10px auto auto;
+    margin-top: 10px;
+    color: yellow;
+    background-color: black;
+  }
+  .iconsTop {
+    display: none;
+  }
+  .bod {
+    padding: 0;
+  }
+  .body {
+    padding: 0;
+  }
+  .tog {
+    transform: translate(0);
+  }
+  .fa-bars {
+    transform: rotate(0);
+  }
+  .relative {
+    position: relative;
+    z-index: 1000000000;
+    background-color: red;
+  }
+  .bodytitle p {
+    line-height: 3rem;
+    margin-bottom: 30px;
+    width: 100%;
+    letter-spacing: 5px;
+    color: white;
+    font-size: 1rem;
+  }
+  .goto {
+    font-size: 1rem;
+    color: yellow;
+  }
+  .first {
+    color: grey;
+  }
+  .bodytitle h3 {
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+  .hoodspan,
+  .first,
+  .goto {
+    font-size: 3rem;
+    line-height: 7rem;
+  }
+  /* .caroselsection {
+    position: relative;
+  } */
+  .btnpadd {
+    position: relative;
+  }
+  .caroselsection span {
+    position: absolute;
+    top: 10px;
+  }
+  .next {
+    left: -2px;
+    letter-spacing: 5px;
+  }
+  .one {
+    display: none;
+  }
+
+  .rcon {
+    left: 50px;
+  }
+  .prev {
+    right: -65px;
+    letter-spacing: 5px;
+  }
+  .pcon {
+    right: 50px;
+  }
 }
 /*=======================
                 Snow
@@ -545,577 +1128,4 @@
   left: 8%;
   -webkit-animation-delay: 29s, 1.5s;
   animation-delay: 29s, 1.5s;
-}
-
-/*=======================
-    Top/Header for Merch
-  =======================*/
-.bgimg {
-  width: 100%;
-  margin: 0;
-}
-
-.merchhead {
-  text-align: center;
-  padding-top: 10rem;
-}
-.COMINGSOON {
-  font-size: 5rem;
-}
-/*=======================
-                Top/Header for Index
-          =======================*/
-
-.ulTop {
-  display: flex;
-  justify-content: space-evenly;
-  font-size: 1.7rem;
-  margin: -10px;
-}
-
-.ulTop li a {
-  text-decoration: none;
-  color: black;
-  position: absolute;
-  margin: 0;
-  z-index: 100;
-  transition: 0.7s;
-  padding: 5px;
-}
-.ulTop li:hover > a {
-  background-color: black;
-  color: white;
-  border-radius: 20%;
-  border: solid grey;
-}
-.weird {
-  width: 100px;
-}
-/*=======================
-       Top Icons
-  =======================*/
-.iconsTop {
-  align-items: center;
-
-  width: 100%;
-  margin: 0;
-  position: absolute;
-  bottom: 25px;
-}
-.iconsTop i {
-  font-size: 2rem;
-}
-.iconimg {
-  position: relative;
-}
-
-/*=======================
-                Body
-        =======================*/
-
-.bodytitle {
-  text-align: center;
-  margin-top: 10%;
-  width: 100%;
-}
-.hoodspan {
-  font-size: 6rem;
-  font-family: "a_attack_graffitiregular";
-}
-.goto {
-  font-size: 6rem;
-  font-family: "a_attack_graffitiregular";
-}
-.first {
-  padding: 30px;
-  font-size: 7rem;
-  background-color: #fdb813;
-  background-image: linear-gradient(315deg, #eeff00 0%, #e43326 74%);
-  font-family: "a_attack_graffitiregular";
-  text-decoration: underline;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  width: 100%;
-}
-
-.bodytitle p {
-  color: white;
-  text-align: center;
-  width: 50%;
-  overflow: visible;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 5rem;
-  line-height: 10rem;
-  margin-bottom: 1rem;
-  width: 100%;
-  letter-spacing: 5px;
-  color: white;
-}
-.break {
-  margin: auto;
-  border-top: solid rgb(221, 156, 14);
-  width: 30%;
-  margin: 5rem auto 10rem;
-  border-radius: 0.25rem;
-  height: 10px;
-}
-.dos {
-  width: 70%;
-}
-.bodytitle h3 {
-  background: rgb(131, 58, 180);
-  background: linear-gradient(
-    90deg,
-    rgba(131, 58, 180, 1) 0%,
-    rgba(253, 29, 29, 1) 50%,
-    rgba(252, 176, 69, 1) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 8rem;
-  margin: 5rem auto;
-}
-.viddiv iframe {
-  z-index: 3;
-}
-.watchbtn {
-  background-color: white;
-  color: black;
-  border-radius: 0.25rem;
-}
-.watchbtn i {
-  transform: rotate(0deg);
-}
-
-/*=====================
-      Carosel
-=====================*/
-.grafpic {
-  width: 100%;
-  z-index: 1000000;
-  height: 50rem;
-}
-.caroselsection {
-  background: rgb(249, 250, 55);
-  background: radial-gradient(
-    circle,
-    rgba(249, 250, 55, 1) 0%,
-    rgba(0, 0, 0, 1) 90%
-  );
-}
-.caroselsection span {
-  color: yellow;
-  font-size: 2rem;
-  font-weight: bold;
-}
-.carousel-inner {
-  text-align: center;
-  margin-top: 5%;
-}
-.caroselsection .carousel-control-prev,
-.caroselsection .carousel-control-next {
-  opacity: 1;
-}
-/*=====================
-      Carosel Images
-=====================*/
-.caroselImg {
-  width: 20%;
-  border-radius: 50%;
-  margin-top: 5%;
-}
-.caroselImg2 {
-  width: 20%;
-  border-radius: 50%;
-  margin-top: 5%;
-}
-
-.me {
-  width: 20%;
-  border-radius: 50%;
-  margin-top: 5%;
-}
-
-.carousel-item {
-  text-align: center;
-  height: 700px;
-}
-.carousel-item h2 {
-  font-size: 3rem;
-  font-family: "Josefin Sans", sans-serif;
-  margin: 2rem auto;
-  background-color: black;
-  color: white;
-  width: fit-content;
-}
-.carousel-inner p {
-  text-align: center;
-  width: 50%;
-  margin-left: 25%;
-  margin-top: 5%;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.8);
-  height: 30%;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 1.5rem;
-  letter-spacing: 5px;
-}
-
-/*============================
-              Bottom/Footer
-         ==========================*/
-
-.footer {
-  justify-content: space-evenly;
-  display: flex;
-  margin: 5rem auto;
-  padding: 100% auto;
-  border-top: solid rgb(221, 156, 14);
-  padding-top: 50px;
-  border-width: thick;
-  border-radius: 0.25rem;
-  width: 95%;
-}
-.bottomMenu {
-  width: 50%;
-  display: flex;
-  justify-content: space-evenly;
-  font-size: 1.5rem;
-  padding-top: 20px;
-}
-.bottomMenu div a {
-  color: white;
-  text-decoration: none;
-}
-.bottomMenu div a:hover {
-  color: yellow;
-}
-
-/*============================
-              Social Media
- ==========================*/
-
-.fab {
-  width: 100%;
-  font-size: 2rem;
-}
-.icons i:hover {
-  transform: rotate(360deg);
-}
-i {
-  transition: 0.8s;
-  transition-property: transform;
-}
-.fa-facebook::before {
-  font-size: 2rem;
-}
-
-.fa-facebook {
-  color: rgb(66, 103, 178);
-
-  margin: 5%;
-  transition: 1s;
-  text-decoration: none;
-}
-.fa-facebook:hover {
-  transform: rotate(360deg);
-}
-.fa-twitter {
-  color: #00acee;
-}
-.fa-instagram {
-  font-size: 2rem;
-  padding: 10%;
-  width: 120%;
-  background: -moz-linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
-  background: -webkit-linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
-  background: linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-  border-radius: 20%;
-}
-
-.fa-youtube {
-  color: #ff0000;
-}
-
-.faceb {
-  background: white;
-  display: inline-block;
-  background: white;
-  border-radius: 50%;
-  box-sizing: content-box;
-  list-style: none;
-}
-
-.icons {
-  display: flex;
-  flex: left;
-
-  justify-content: space-evenly;
-
-  padding-top: 1%;
-}
-.iconsBot {
-  margin-right: 10%;
-  width: 50%;
-}
-.icons a {
-  margin: auto 5%;
-}
-
-/*============================
-              Coin
-  ==========================*/
-
-#bar {
-  position: absolute;
-}
-.bar {
-  background-color: black;
-  border: solid white;
-  bottom: -10;
-  height: 100px;
-  transition: 20s;
-  border-radius: 50%;
-  width: 100px;
-  position: relative;
-  z-index: 10;
-  animation-fill-mode: forwards;
-}
-
-#bar:hover .bar {
-  transform: rotateY(5040deg);
-  background: linear-gradient(315deg, #eeff00 0%, #e43326 74%);
-  color: black;
-}
-
-.hc {
-  color: gold;
-  font-size: 4rem;
-  text-shadow: #000;
-}
-#h,
-#c {
-  position: absolute;
-  font-family: "coolregular";
-}
-
-#h {
-  top: -15%;
-  left: 20%;
-}
-#c {
-  left: 37%;
-  top: 15%;
-}
-
-#bar:hover .hc {
-  color: black;
-}
-/*================================
-        Merchandise Page
-================================*/
-/*================================
-        Mobile Design
-================================*/
-
-/* .popup {
-  position: absolute;
-  z-index: 100;
-  width: 100%;
-  background: rgba(25, 98, 0, 0.5);
-  align-items: center;
-}
-.popup p {
-  height: 49.2rem;
-  margin: 20% 5px auto 15px;
-  font-size: 2rem;
-} */
-.viddiv {
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  position: relative;
-  height: 0;
-}
-.viddiv iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-}
-@media screen and (max-width: 480px) {
-  .begin {
-    display: none;
-  }
-  #bod {
-    display: block;
-  }
-  .bgimg {
-    width: 100%;
-    margin-top: 0;
-    height: 20rem;
-  }
-  .bottomMenu {
-    display: none;
-    margin: 0;
-  }
-  .iconsBot {
-    width: 100%;
-    margin: 0 auto 60px;
-    align-items: center;
-    text-align: center;
-  }
-  .bar {
-    display: none;
-  }
-  .snowflakes {
-    display: none;
-  }
-  .grafpic {
-    height: 20rem;
-    margin: auto auto;
-  }
-  .carousel {
-    height: 20rem;
-  }
-  .carousel-item {
-    height: auto;
-  }
-  .carousel-item p {
-    font-size: 0.25rem;
-  }
-  .carousel span {
-    font-size: 1rem;
-  }
-  .fa-bars {
-    display: block;
-    color: red;
-    font-size: 2rem;
-    position: absolute;
-    z-index: 2;
-    right: 5px;
-    top: 0;
-  }
-  .ulTop {
-    flex-direction: column;
-    position: absolute;
-
-    display: block;
-    margin-left: 1px;
-    z-index: 2;
-    top: 5px;
-    padding: 5.5px;
-    transform: translate(-100%);
-    transition: 0.5s;
-    height: 100%;
-  }
-  .ulTop li {
-    text-align: center;
-    display: block;
-    width: 100%;
-    padding: 0.8px;
-  }
-  .ulTop li a {
-    position: relative;
-    display: block;
-    font-size: 1.9rem;
-    border: grey solid;
-    padding: 10px auto auto;
-    margin-top: 10px;
-    color: yellow;
-    background-color: black;
-  }
-  .iconsTop {
-    display: none;
-  }
-  .bod {
-    padding: 0;
-  }
-  .body {
-    padding: 0;
-  }
-  .tog {
-    transform: translate(0);
-  }
-  .fa-bars {
-    transform: rotate(0);
-  }
-  .relative {
-    position: relative;
-    z-index: 1000000000;
-    background-color: red;
-  }
-  .bodytitle p {
-    line-height: 3rem;
-    margin-bottom: 30px;
-    width: 100%;
-    letter-spacing: 5px;
-    color: white;
-    font-size: 1rem;
-  }
-  .goto {
-    font-size: 1rem;
-    color: yellow;
-  }
-  .first {
-    color: grey;
-  }
-  .bodytitle h3 {
-    font-size: 2rem;
-    font-weight: bolder;
-  }
-  .hoodspan,
-  .first,
-  .goto {
-    font-size: 3rem;
-    line-height: 7rem;
-  }
-  .caroselsection {
-    position: relative;
-  }
-  .btnpadd {
-    position: relative;
-
-    border: solid red;
-  }
-  .caroselsection span {
-    position: absolute;
-    top: 10px;
-  }
-  .next {
-    left: -2px;
-    letter-spacing: 5px;
-  }
-  .rcon {
-    left: 50px;
-  }
-  .prev {
-    right: -65px;
-    letter-spacing: 5px;
-  }
-  .pcon {
-    right: 50px;
-  }
 }
