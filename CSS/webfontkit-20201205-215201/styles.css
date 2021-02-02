@@ -11,6 +11,17 @@
   /* color: white; */
   font-family: "a_attack_graffitiregular";
 }
+.Bod {
+  display: none;
+}
+.body {
+  overflow: hidden;
+  background-color: black;
+}
+
+/*========================
+              ScrollBar
+          ========================*/
 ::-webkit-scrollbar {
   width: 20px;
 }
@@ -19,6 +30,8 @@
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
+  color: white;
+  background-color: black;
 }
 
 /* Handle */
@@ -32,15 +45,6 @@
   border-radius: 10px;
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(
-    90deg,
-    rgba(131, 58, 180, 1) 0%,
-    rgba(253, 29, 29, 1) 50%,
-    rgba(252, 176, 69, 1) 100%
-  );
-}
 /*-------------------------
          Fonts  
 --------------------------*/
@@ -64,18 +68,11 @@
   display: none;
   /* This is weird, the bars were causing a padding like area at the top of the page, and doing this makes it go away */
 }
-.Bod {
-  display: none;
-  background-color: black;
-}
 
 /* -----------------------------------
               Load Screen
 ------------------------------------- */
 
-.body {
-  background-color: black;
-}
 .begin button,
 .its,
 .your,
@@ -91,9 +88,7 @@
 .begin {
   animation: pass2 0.1s;
   animation-delay: 5s;
-
   position: relative;
-
   text-align: center;
 }
 .begin button {
@@ -104,31 +99,27 @@
 .begin button i {
   transform: rotate(0deg);
 }
-.begin p span {
-  font-size: 0;
-  margin: auto 1rem;
-}
+
 .its {
   transform: translate(-400px);
   animation: its 4s;
   animation-delay: 0.7s;
+  font-size: 0rem;
 }
 .your {
   transform: translate(1000px);
   animation: your 4s;
   animation-delay: 1s;
 }
-.your2 {
-  animation-delay: 4s;
-}
+.your2,
 .its2 {
   animation-delay: 4s;
 }
+
 #favor {
   transform: translate(-1600px, 300px);
   animation: favorite 7s;
   animation-delay: 1.2s;
-
   font-size: 10rem;
 }
 
@@ -143,13 +134,8 @@
 }
 #cuzzo {
   animation-delay: 7s;
-  color: yellow;
-  z-index: 1000;
 }
 @keyframes unk {
-  0% {
-    transform: translate(-300px, -300px);
-  }
   50% {
     transform: translate(-300px, 200px);
   }
@@ -158,9 +144,6 @@
   }
 }
 @keyframes fav2 {
-  0% {
-    transform: translate(-1600px, 300px);
-  }
   50% {
     transform: translate(350px, 300px);
   }
@@ -171,9 +154,6 @@
 }
 
 @keyframes favorite {
-  0% {
-    transform: translate(-1600px, 300px);
-  }
   15% {
     transform: translate(-350px, 300px);
   }
@@ -192,9 +172,6 @@
   }
 }
 @keyframes your {
-  0% {
-    font-size: 0;
-  }
   50% {
     font-size: 10rem;
     transform: translate(0, 0);
@@ -204,9 +181,6 @@
   }
 }
 @keyframes its {
-  0% {
-    font-size: 0;
-  }
   50% {
     transform: translate(-400px);
     font-size: 10rem;
@@ -217,24 +191,13 @@
 }
 
 /*=======================
-    Top/Header for Merch
-  =======================*/
+                Top/Header for Index
+          =======================*/
+
 .bgimg {
   width: 100%;
   margin: 0;
 }
-
-.merchhead {
-  text-align: center;
-  padding-top: 10rem;
-}
-.COMINGSOON {
-  font-size: 5rem;
-}
-/*=======================
-                Top/Header for Index
-          =======================*/
-
 header {
   position: absolute;
   top: 0;
@@ -246,15 +209,12 @@ header {
   display: flex;
   justify-content: space-evenly;
   font-size: 1.7rem;
-  margin: -10px;
 }
 
 .ulTop li a {
   text-decoration: none;
   color: black;
   position: absolute;
-  margin: 0;
-  z-index: 100;
   transition: 0.7s;
   padding: 5px;
 }
@@ -264,92 +224,68 @@ header {
   border-radius: 20%;
   border: solid grey;
 }
-.weird {
-  width: 100px;
-}
+
 /*=======================
        Top Icons
   =======================*/
+.iconImgDiv {
+  position: relative;
+}
 .iconsTop {
   align-items: center;
-  background-color: transparent;
   width: 100%;
-  margin: 0;
   position: absolute;
   bottom: 25px;
-}
-.iconsTop i {
   font-size: 2rem;
-}
-.iconimg {
-  position: relative;
 }
 .iconsTop div:hover > a i {
   transform: rotate(360deg);
-  /* border: solid black;
-  border-style: double;
-  border-width: 0.5rem;
-  border-radius: 0.25rem; */
 }
-/* .iconsTop div:hover {
-  background-color: black;
-  border-radius: 0.25rem;
-  width: 3rem;
-} */
 
 /*=======================
                 Body
         =======================*/
 
-.bodytitle {
+.bodytitle,
+.bodytitle span {
   text-align: center;
   margin-top: 10%;
   width: 100%;
-}
-.hoodspan {
   font-size: 6rem;
   font-family: "a_attack_graffitiregular";
+  color: yellow;
 }
-.goto {
-  font-size: 6rem;
-  font-family: "a_attack_graffitiregular";
-}
+
 .first {
   padding: 30px;
-  font-size: 7rem;
+  font-size: 8rem;
   background-color: #fdb813;
   background-image: linear-gradient(315deg, #eeff00 0%, #e43326 74%);
-  font-family: "a_attack_graffitiregular";
-  text-decoration: underline;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  width: 100%;
 }
 
 .bodytitle p {
   color: white;
   text-align: center;
   width: 50%;
-  overflow: visible;
   font-family: "Josefin Sans", sans-serif;
   font-size: 5rem;
   line-height: 10rem;
-  margin-bottom: 1rem;
   width: 100%;
   letter-spacing: 5px;
-  color: white;
 }
 .break {
-  margin: auto;
   border-top: solid rgb(221, 156, 14);
   width: 30%;
   margin: 5rem auto 10rem;
-  border-radius: 0.25rem;
-  height: 10px;
 }
 .dos {
   width: 70%;
 }
+/*=======================
+       Video
+  =======================*/
 .bodytitle h3 {
   background: rgb(131, 58, 180);
   background: linear-gradient(
@@ -363,13 +299,18 @@ header {
   font-size: 8rem;
   margin: 5rem auto;
 }
-.viddiv iframe {
-  z-index: 3;
-}
+
 .watchbtn {
   background-color: white;
   color: black;
   border-radius: 0.25rem;
+  font-size: 3rem;
+  padding: 10px;
+}
+.watchbtn:hover {
+  color: white;
+  background-color: black;
+  border: yellow solid;
 }
 .watchbtn i {
   transform: rotate(0deg);
@@ -589,7 +530,13 @@ i {
 
 #bar:hover .bar {
   transform: rotateY(5040deg);
-  background: linear-gradient(315deg, #eeff00 0%, #e43326 74%);
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
   color: black;
 }
 
