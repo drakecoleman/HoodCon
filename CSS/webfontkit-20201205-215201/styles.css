@@ -577,14 +577,8 @@ i {
 
 #bar:hover .bar {
   transform: rotateY(5040deg);
-  background: rgb(131, 58, 180);
-  background: linear-gradient(
-    90deg,
-    rgba(131, 58, 180, 1) 0%,
-    rgba(253, 29, 29, 1) 50%,
-    rgba(252, 176, 69, 1) 100%
-  );
-  color: black;
+
+  color: white;
 }
 
 .hc {
@@ -599,16 +593,16 @@ i {
 }
 
 #h {
-  top: -15%;
+  top: -4%;
   left: 20%;
 }
 #c {
   left: 37%;
-  top: 15%;
+  top: 20%;
 }
 
 #bar:hover .hc {
-  color: black;
+  color: white;
 }
 .drakelink {
   text-align: center;
