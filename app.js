@@ -17,19 +17,35 @@ let youtube = document.querySelector(".you");
 let face = document.querySelector(".fa-facebook");
 let twit = document.querySelector(".fa-twitter");
 let insta = document.querySelector(".fa-instagram");
+let dipshit = document.querySelector(".dippy");
 
 let currentslide = slide1;
 let takeaway = () => {
   face.classList.remove("ico");
+  face.classList.add("feces");
   twit.classList.remove("ico");
+  twit.classList.add("twit");
   insta.classList.remove("ico");
+  insta.classList.add("insty");
   youtube.classList.remove("ico");
+  dipshit.classList.add("dipshit");
+};
+let giveaway = () => {
+  face.classList.add("ico");
+  face.classList.remove("feces");
+  twit.classList.add("ico");
+  twit.classList.remove("twit");
+  insta.classList.add("ico");
+  insta.classList.remove("insty");
+  youtube.classList.add("ico");
+  dipshit.classList.remove("dipshit");
 };
 
 ex.addEventListener("click", () => {
   board.style.width = "0";
   board.style.right = "1000%";
   youtube.classList.toggle("youtuber");
+  giveaway();
 });
 follow.addEventListener("click", () => {
   board.style.width = "100%";

@@ -232,21 +232,38 @@ header {
        Follow Me
   =======================*/
 .followme {
-  right: -1000%;
+  right: 200%;
   height: 800px;
+  text-align: right;
 
   background-color: black;
   z-index: 3;
   position: absolute;
 
-  transition: 1s;
-  overflow: hidden;
+  transition: 0.8s;
+}
+.followme p {
+  font-size: 3rem;
+  color: white;
+  letter-spacing: 8px;
+}
+.followp1 {
+  width: 90%;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  margin: 3rem auto 0;
+}
+.followp2 {
+  margin: 250px auto 0;
+  width: 75%;
+  text-align: center;
 }
 .xdiv {
   position: relative;
 }
 .fa-times {
-  color: white;
+  color: yellow;
   position: absolute;
   top: 25px;
   right: 25px;
@@ -255,10 +272,24 @@ header {
   cursor: pointer;
 }
 .yu .youtuber {
-  font-size: 10rem;
-  transform: translate(-550%, -300%);
+  transition: 1.5s;
+  font-size: 12rem;
+  transform: translate(-200%, -170%);
 }
-.
+.three .insty {
+  font-size: 4rem;
+  transform: translate(500%);
+}
+.two .twit {
+  font-size: 4rem;
+  transform: translate(300%);
+}
+.iconsTop .feces::before {
+  font-size: 4rem;
+}
+.dipshit {
+  transform: translate(300%);
+}
 
 /*=======================
        Top Icons
@@ -340,6 +371,7 @@ header {
   margin: 10rem auto;
   width: 70%;
 }
+
 /*=======================
        Video
   =======================*/
