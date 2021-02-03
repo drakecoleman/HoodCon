@@ -197,26 +197,27 @@
 .bgimg {
   width: 100%;
   margin: 0;
+  filter: brightness(60%);
 }
 header {
   position: absolute;
   top: 0;
-  display: flex;
   width: 100%;
   margin-top: 25px;
 }
+
 .ulTop {
   display: flex;
-  justify-content: space-evenly;
   font-size: 1.7rem;
+  justify-content: space-evenly;
 }
 
 .ulTop li a {
   text-decoration: none;
   color: black;
-  position: absolute;
   transition: 0.7s;
   padding: 5px;
+  position: absolute;
 }
 .ulTop li:hover > a {
   background-color: black;
@@ -315,78 +316,116 @@ header {
 .watchbtn i {
   transform: rotate(0deg);
 }
-
+/*=====================
+     This ^^^^^ is where I stopped cleaning code
+=====================*/
 /*=====================
       Carosel
 =====================*/
+
+.carosel {
+  position: relative;
+  height: 40rem;
+
+  overflow: hidden;
+}
 .grafpic {
   width: 100%;
-  z-index: 1000000;
-  height: 50rem;
+  position: absolute;
+  filter: brightness(60%);
 }
-
-.caroselsection span {
+.inside {
+  position: absolute;
+  width: 70%;
+  text-align: center;
+  left: 17%;
+}
+.caroselImg {
+  margin-top: 15px;
+  width: 30%;
+  border-radius: 50%;
+}
+.inside h2 {
+  margin-top: 10px;
   color: yellow;
   font-size: 2rem;
-  font-weight: bold;
 }
-.carousel-inner {
-  text-align: center;
-  margin-top: 5%;
+.inside p {
+  background-color: rgba(255, 255, 255, 0.3);
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgb(201, 236, 118) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bolder;
+  font-size: 2.2rem;
+  margin-top: 2.7rem;
+  padding: 45px;
+  border-radius: 0.25rem;
+  backdrop-filter: blur(2px);
+  box-shadow: inset 0px 0px 10px 10px #49fb35;
+  /* width: 150%; */
 }
-.caroselsection .carousel-control-prev,
-.caroselsection .carousel-control-next {
-  opacity: 1;
+/* .inside p::after {
+  right: -50px;
+  bottom: 0;
+  position: absolute;
+  content: "";
+  height: 105px;
+  width: 55px;
+  background-color: RGB(73, 251, 53);
+  color: red;
+  z-index: -6;
+  filter: blur(20px);
+} */
+.slide {
+  transition: 2s;
+}
+.slide1 {
+  position: absolute;
+  color: red;
+  transform: translate(0);
+}
+.slide2,
+.slide3 {
+  position: absolute;
+  transform: translate(300%);
+}
+.left {
+  opacity: 0;
+  transition: 4s;
+}
+
+.buttons {
+  display: flex;
+
+  position: absolute;
+  width: 100%;
+  justify-content: space-between;
+  top: 50%;
+}
+.buttons i {
+  color: black;
+  background-color: grey;
+  font-size: 2rem;
+  border-radius: 0.25rem;
+  padding: 15px;
+  margin: auto 10px;
+  cursor: pointer;
+}
+.buttons i:hover {
+  color: white;
+  background-color: black;
 }
 /*=====================
       Carosel Images
 =====================*/
-.caroselImg {
-  width: 20%;
-  border-radius: 50%;
-  margin-top: 5%;
-}
-.caroselImg2 {
-  width: 20%;
-  border-radius: 50%;
-  margin-top: 5%;
-}
-
-.me {
-  width: 20%;
-  border-radius: 50%;
-  margin-top: 5%;
-}
-
-.carousel-item {
-  text-align: center;
-  height: 700px;
-  display: flex;
-  flex-direction: row;
-}
-.carousel-item h2 {
-  font-size: 3rem;
-  font-family: "Josefin Sans", sans-serif;
-  margin: 2rem auto;
-  background-color: black;
-  color: white;
-  width: fit-content;
-}
-.carousel-inner p {
-  text-align: center;
-  width: 50%;
-  margin-left: 25%;
-  margin-top: 5%;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.8);
-  height: 30%;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 1.5rem;
-  letter-spacing: 5px;
-}
-.col {
-  border: solid red;
-}
 
 /*============================
               Bottom/Footer
