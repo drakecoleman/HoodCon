@@ -10,8 +10,16 @@ let right = document.querySelector(".right");
 let slide1 = document.querySelector(".slide1");
 let slide2 = document.querySelector(".slide2");
 let slide3 = document.querySelector(".slide3");
-
+let follow = document.querySelector(".follow");
+let board = document.querySelector(".followme");
+let ex = document.querySelector(".fa-times");
 let currentslide = slide1;
+ex.addEventListener("click", () => {
+  board.style.top = "1000%";
+});
+follow.addEventListener("click", () => {
+  board.style.top = "0";
+});
 
 button.addEventListener("click", () => {
   bod.style.display = "block";

@@ -219,12 +219,38 @@ header {
   transition: 0.7s;
   padding: 5px;
   position: absolute;
+  cursor: pointer;
 }
 .ulTop li:hover > a {
   background-color: black;
   color: white;
   border-radius: 20%;
   border: solid grey;
+}
+/*=======================
+       Follow Me
+  =======================*/
+.followme {
+  top: -1000%;
+  height: 800px;
+  width: 100%;
+  background-color: black;
+  z-index: 3;
+  position: absolute;
+  animation-fill-mode: forwards;
+  transition: 1s;
+}
+.xdiv {
+  position: relative;
+}
+.fa-times {
+  color: white;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  z-index: 3;
+  font-size: 3rem;
+  cursor: pointer;
 }
 
 /*=======================
@@ -234,6 +260,7 @@ header {
   position: relative;
 }
 .iconsTop {
+  z-index: 3;
   align-items: center;
   width: 100%;
   position: absolute;
@@ -247,6 +274,10 @@ header {
 .iconsTop div:hover > a i {
   transform: rotate(360deg);
 }
+
+/*=======================
+      Social Keyframes
+  =======================*/
 
 /*=======================
                 Body

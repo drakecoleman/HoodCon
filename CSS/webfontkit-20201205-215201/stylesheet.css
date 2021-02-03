@@ -15,3 +15,1042 @@
   font-weight: normal;
   font-style: normal;
 }
+/*========================
+              Body and Global
+          ========================*/
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  /* font-family: "Josefin Sans", sans-serif; */
+  /* color: white; */
+  font-family: "a_attack_graffitiregular";
+}
+.Bod {
+  transition: 2s ease;
+}
+.body {
+  background-color: black;
+}
+
+/*========================
+              ScrollBar
+          ========================*/
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+  color: white;
+  background-color: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  border-radius: 10px;
+}
+
+/*-------------------------
+         Fonts  
+--------------------------*/
+@font-face {
+  font-family: "a_attack_graffitiregular";
+  src: url("aattackgraffiti-webfont.woff2") format("woff2"),
+    url("aattackgraffiti-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "coolregular";
+  src: url("dastreets-8lmz-webfont.woff2") format("woff2"),
+    url("dastreets-8lmz-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.fa-bars {
+  position: absolute;
+  bottom: 0;
+  display: none;
+  /* This is weird, the bars were causing a padding like area at the top of the page, and doing this makes it go away */
+}
+
+/*=======================
+                Top/Header for Index
+          =======================*/
+
+.bgimg {
+  width: 100%;
+  margin: 0;
+  filter: brightness(60%);
+}
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.ulTop {
+  display: flex;
+  font-size: 1.7rem;
+  justify-content: space-evenly;
+}
+
+.ulTop li a {
+  text-decoration: none;
+  color: black;
+  transition: 0.7s;
+  padding: 5px;
+  position: absolute;
+  cursor: pointer;
+}
+.ulTop li:hover > a {
+  background-color: black;
+  color: white;
+  border-radius: 20%;
+  border: solid grey;
+}
+
+/*=======================
+       Top Icons
+  =======================*/
+.iconImgDiv {
+  position: relative;
+}
+.iconsTop {
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  bottom: 25px;
+  font-size: 2rem;
+  color: white;
+}
+.fa-instagram {
+  color: white;
+}
+.iconsTop div:hover > a i {
+  transform: rotate(360deg);
+}
+
+/*=======================
+      Social Keyframes
+  =======================*/
+
+.followme {
+  top: -1000;
+  height: 800px;
+  width: 100%;
+  background-color: black;
+  z-index: 3;
+  position: absolute;
+  animation-fill-mode: forwards;
+}
+.fellowme {
+  top: 0;
+}
+.fellow {
+  z-index: 3;
+}
+
+/*=======================
+                Body
+        =======================*/
+.test {
+  width: 150%;
+}
+.test1 {
+  position: absolute;
+  background-color: grey;
+  width: 100%;
+  overflow: hidden;
+  filter: brightness(10%);
+  z-index: -1;
+}
+
+.bodytitle,
+.bodytitle span {
+  text-align: center;
+
+  width: 100%;
+  font-size: 6rem;
+  font-family: "a_attack_graffitiregular";
+  color: yellow;
+  overflow: hidden;
+}
+
+.first {
+  padding: 30px;
+  font-size: 8rem;
+  background-color: #fdb813;
+  background-image: linear-gradient(315deg, #eeff00 0%, #e43326 74%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bodytitle p {
+  color: white;
+  text-align: center;
+  margin-top: 10%;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 5rem;
+  line-height: 10rem;
+  width: 100%;
+  letter-spacing: 5px;
+}
+.break {
+  border-top: solid yellow;
+  width: 30%;
+  margin: 3rem auto 5rem;
+}
+.dos {
+  margin: 10rem auto;
+  width: 70%;
+}
+/*=======================
+       Video
+  =======================*/
+.latediv {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+}
+.bodytitle h3 {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 8rem;
+  margin: 5rem auto 1rem;
+}
+
+.watchbtn {
+  background-color: white;
+  color: black;
+  border-radius: 0.25rem;
+  font-size: 3rem;
+  padding: 10px;
+}
+.watchbtn:hover {
+  color: white;
+  background-color: black;
+  border: yellow solid;
+  transition: 1s ease-out;
+  cursor: pointer;
+}
+.watchbtn i {
+  transition: 0.7s ease-out;
+  transform: rotate(0deg);
+}
+
+/*=====================
+     This ^^^^^ is where I stopped cleaning code
+=====================*/
+/*=====================
+      Carosel
+=====================*/
+
+.carosel {
+  position: relative;
+  height: 45rem;
+  overflow: hidden;
+}
+.grafpic {
+  width: 100%;
+  position: absolute;
+  filter: brightness(60%);
+  height: 100%;
+}
+.inside {
+  position: absolute;
+  width: 70%;
+  text-align: center;
+  left: 17%;
+}
+.caroselImg {
+  margin-top: 15px;
+  width: 30%;
+  border-radius: 50%;
+}
+.inside h2 {
+  margin-top: 10px;
+  color: yellow;
+  font-size: 2rem;
+}
+.inside p {
+  background-color: rgba(255, 255, 255, 0.3);
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgb(201, 236, 118) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bolder;
+  font-size: 2.2rem;
+  margin-top: 2.7rem;
+  padding: 45px;
+  border-radius: 0.25rem;
+  backdrop-filter: blur(2px);
+  box-shadow: inset 0px 0px 10px 10px grey;
+}
+
+.slide {
+  transition: 2s;
+}
+.slide1 {
+  position: absolute;
+  color: red;
+  transform: translate(0);
+}
+.slide2,
+.slide3 {
+  position: absolute;
+  transform: translate(300%);
+}
+.left {
+  opacity: 0;
+  transition: 4s;
+}
+
+.buttons {
+  display: flex;
+
+  position: absolute;
+  width: 100%;
+  justify-content: space-between;
+  top: 50%;
+}
+.buttons i {
+  color: black;
+  background-color: grey;
+  font-size: 2rem;
+  border-radius: 0.25rem;
+  padding: 15px;
+  margin: auto 10px;
+  cursor: pointer;
+}
+.buttons i:hover {
+  color: white;
+  background-color: black;
+}
+/*=====================
+      Carosel Images
+=====================*/
+
+/*============================
+              Bottom/Footer
+         ==========================*/
+
+.footer {
+  justify-content: space-evenly;
+  display: flex;
+  margin: 5rem auto;
+  padding: 100% auto;
+  border-top: solid rgb(221, 156, 14);
+  padding-top: 50px;
+  border-width: thick;
+  border-radius: 0.25rem;
+  width: 95%;
+}
+.bottomMenu {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+  padding-top: 20px;
+}
+.bottomMenu div a {
+  color: white;
+  text-decoration: none;
+}
+.bottomMenu div a:hover {
+  color: yellow;
+}
+
+/*============================
+              Social Media
+ ==========================*/
+
+.fab {
+  width: 100%;
+  font-size: 2rem;
+}
+
+i {
+  transition: 0.8s;
+}
+.fa-facebook::before {
+  font-size: 2rem;
+}
+
+.fa-facebook {
+  color: rgb(66, 103, 178);
+
+  margin: 5%;
+  transition: 1s;
+  text-decoration: none;
+}
+.dove:hover > a i {
+  transform: rotate(360deg);
+}
+.fa-twitter {
+  color: #00acee;
+}
+.fa-instagram {
+  font-size: 2rem;
+  padding: 10%;
+  width: 120%;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  border-radius: 20%;
+}
+
+.fa-youtube {
+  color: #ff0000;
+}
+
+.faceb {
+  background: white;
+  display: inline-block;
+  background: white;
+  border-radius: 50%;
+  box-sizing: content-box;
+  list-style: none;
+}
+
+.icons {
+  display: flex;
+  flex: left;
+
+  justify-content: space-evenly;
+
+  padding-top: 1%;
+}
+.iconsBot {
+  margin-right: 10%;
+  width: 50%;
+}
+.icons a {
+  margin: auto 5%;
+}
+
+/*============================
+              Coin
+  ==========================*/
+
+#bar {
+  position: absolute;
+}
+.bar {
+  background-color: black;
+  border: solid white;
+  bottom: -10;
+  height: 100px;
+  transition: 20s;
+  border-radius: 50%;
+  width: 100px;
+  position: relative;
+  z-index: 10;
+  animation-fill-mode: forwards;
+}
+
+#bar:hover .bar {
+  transform: rotateY(5040deg);
+
+  color: white;
+}
+
+.hc {
+  color: gold;
+  font-size: 4rem;
+  text-shadow: #000;
+}
+#h,
+#c {
+  position: absolute;
+  font-family: "coolregular";
+}
+
+#h {
+  top: -4%;
+  left: 20%;
+}
+#c {
+  left: 37%;
+  top: 20%;
+}
+
+#bar:hover .hc {
+  color: white;
+}
+.drakelink {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+  letter-spacing: 3px;
+}
+/*================================
+        Merchandise Page
+================================*/
+/*================================
+        Mobile Design
+================================*/
+
+/* .popup {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  background: rgba(25, 98, 0, 0.5);
+  align-items: center;
+}
+.popup p {
+  height: 49.2rem;
+  margin: 20% 5px auto 15px;
+  font-size: 2rem;
+} */
+.viddiv {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+.viddiv iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+@media screen and (max-width: 480px) {
+  .begin {
+    display: none;
+  }
+  #bod {
+    display: block;
+  }
+  .bgimg {
+    width: 100%;
+    margin-top: 0;
+    height: 20rem;
+  }
+  .bottomMenu {
+    display: none;
+    margin: 0;
+  }
+  .iconsBot {
+    width: 100%;
+    margin: 0 auto 60px;
+    align-items: center;
+    text-align: center;
+  }
+  .bar {
+    display: none;
+  }
+  .snowflakes {
+    display: none;
+  }
+  .grafpic {
+    height: 20rem;
+    margin: auto auto;
+  }
+  .carousel {
+    height: 20rem;
+  }
+  .carousel-item {
+    height: auto;
+  }
+  .carousel-item p {
+    font-size: 0.25rem;
+    margin: 0;
+  }
+  .carousel-item h2 {
+    font-size: 0.25rem;
+    margin: 0;
+  }
+  .picky {
+    margin: 0;
+    width: fit-content;
+  }
+  .carousel span {
+    font-size: 1rem;
+  }
+  .fa-bars {
+    display: block;
+    color: red;
+    font-size: 2rem;
+    position: absolute;
+    z-index: 2;
+    right: 5px;
+    top: 0;
+  }
+  .ulTop {
+    flex-direction: column;
+    position: absolute;
+
+    display: block;
+    margin-left: 1px;
+    z-index: 2;
+    top: 5px;
+    padding: 5.5px;
+    transform: translate(-100%);
+    transition: 0.5s;
+    height: 100%;
+  }
+  .ulTop li {
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 0.8px;
+  }
+  .ulTop li a {
+    position: relative;
+    display: block;
+    font-size: 1.9rem;
+    border: grey solid;
+    padding: 10px auto auto;
+    margin-top: 10px;
+    color: yellow;
+    background-color: black;
+  }
+  .iconsTop {
+    display: none;
+  }
+  .bod {
+    padding: 0;
+  }
+  .body {
+    padding: 0;
+  }
+  .tog {
+    transform: translate(0);
+  }
+  .fa-bars {
+    transform: rotate(0);
+  }
+  .relative {
+    position: relative;
+    z-index: 1000000000;
+    background-color: red;
+  }
+  .bodytitle p {
+    line-height: 3rem;
+    margin-bottom: 30px;
+    width: 100%;
+    letter-spacing: 5px;
+    color: white;
+    font-size: 1rem;
+  }
+  .goto {
+    font-size: 1rem;
+    color: yellow;
+  }
+  .first {
+    color: grey;
+  }
+  .bodytitle h3 {
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+  .hoodspan,
+  .first,
+  .goto {
+    font-size: 3rem;
+    line-height: 7rem;
+  }
+  /* .caroselsection {
+    position: relative;
+  } */
+  .btnpadd {
+    position: relative;
+  }
+  .caroselsection span {
+    position: absolute;
+    top: 10px;
+  }
+  .next {
+    left: -2px;
+    letter-spacing: 5px;
+  }
+  .one {
+    display: none;
+  }
+
+  .rcon {
+    left: 50px;
+  }
+  .prev {
+    right: -65px;
+    letter-spacing: 5px;
+  }
+  .pcon {
+    right: 50px;
+  }
+}
+/*=======================
+                Snow
+          =======================*/
+
+.snowflake {
+  color: #fff;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+  text-shadow: 0 0 5px #000;
+}
+
+@-webkit-keyframes snowflakes-fall {
+  0% {
+    top: -10%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+@-webkit-keyframes snowflakes-shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(80px);
+    transform: translateX(80px);
+  }
+}
+@keyframes snowflakes-fall {
+  0% {
+    top: -10%;
+  }
+  100% {
+    top: 280%;
+  }
+}
+@keyframes snowflakes-shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+}
+.snowflake {
+  position: absolute;
+  top: -10%;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: silver;
+  z-index: 2;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+  -webkit-animation-name: snowflakes-fall, snowflakes-shake;
+  -webkit-animation-duration: 30s, 7s;
+  -webkit-animation-timing-function: linear, ease-in-out;
+  -webkit-animation-iteration-count: infinite, infinite;
+  -webkit-animation-play-state: running, running;
+  animation-name: snowflakes-fall, snowflakes-shake;
+  animation-duration: 30s, 7s;
+  animation-timing-function: linear, ease-in-out;
+  animation-iteration-count: infinite, infinite;
+  animation-play-state: running, running;
+}
+.snowflake:nth-of-type(0) {
+  left: 1%;
+  -webkit-animation-delay: 0s, 0s;
+  animation-delay: 0s, 0s;
+}
+.snowflake:nth-of-type(1) {
+  left: 10%;
+  -webkit-animation-delay: 1s, 1s;
+  animation-delay: 1s, 1s;
+}
+.snowflake:nth-of-type(2) {
+  left: 20%;
+  -webkit-animation-delay: 6s, 0.5s;
+  animation-delay: 6s, 0.5s;
+}
+.snowflake:nth-of-type(3) {
+  left: 30%;
+  -webkit-animation-delay: 4s, 2s;
+  animation-delay: 4s, 2s;
+}
+.snowflake:nth-of-type(4) {
+  left: 40%;
+  -webkit-animation-delay: 2s, 2s;
+  animation-delay: 2s, 2s;
+}
+.snowflake:nth-of-type(5) {
+  left: 50%;
+  -webkit-animation-delay: 8s, 3s;
+  animation-delay: 8s, 3s;
+}
+.snowflake:nth-of-type(6) {
+  left: 60%;
+  -webkit-animation-delay: 6s, 2s;
+  animation-delay: 6s, 2s;
+}
+.snowflake:nth-of-type(7) {
+  left: 70%;
+  -webkit-animation-delay: 2.5s, 1s;
+  animation-delay: 2.5s, 1s;
+}
+.snowflake:nth-of-type(8) {
+  left: 80%;
+  -webkit-animation-delay: 1s, 0s;
+  animation-delay: 1s, 0s;
+}
+.snowflake:nth-of-type(9) {
+  left: 90%;
+  -webkit-animation-delay: 3s, 1.5s;
+  animation-delay: 3s, 1.5s;
+}
+.snowflake:nth-of-type(10) {
+  left: 25%;
+  -webkit-animation-delay: 2s, 0s;
+  animation-delay: 2s, 0s;
+}
+.snowflake:nth-of-type(11) {
+  left: 65%;
+  -webkit-animation-delay: 4s, 2.5s;
+  animation-delay: 4s, 2.5s;
+}
+.snowflake:nth-of-type(12) {
+  left: 1%;
+  -webkit-animation-delay: 10s, 0s;
+  animation-delay: 10s, 0s;
+}
+.snowflake:nth-of-type(13) {
+  left: 10%;
+  -webkit-animation-delay: 11s, 1s;
+  animation-delay: 11s, 1s;
+}
+.snowflake:nth-of-type(14) {
+  left: 20%;
+  -webkit-animation-delay: 13s, 0.5s;
+  animation-delay: 13s, 0.5s;
+}
+.snowflake:nth-of-type(15) {
+  left: 30%;
+  -webkit-animation-delay: 15s, 2s;
+  animation-delay: 15s, 2s;
+}
+.snowflake:nth-of-type(16) {
+  left: 40%;
+  -webkit-animation-delay: 11s, 2s;
+  animation-delay: 11s, 2s;
+}
+.snowflake:nth-of-type(17) {
+  left: 50%;
+  -webkit-animation-delay: 10s, 3s;
+  animation-delay: 10s, 3s;
+}
+.snowflake:nth-of-type(18) {
+  left: 60%;
+  -webkit-animation-delay: 12s, 2s;
+  animation-delay: 12s, 2s;
+}
+.snowflake:nth-of-type(19) {
+  left: 70%;
+  -webkit-animation-delay: 14s, 1s;
+  animation-delay: 14s, 1s;
+}
+.snowflake:nth-of-type(20) {
+  left: 80%;
+  -webkit-animation-delay: 16s, 0s;
+  animation-delay: 16s, 0s;
+}
+.snowflake:nth-of-type(21) {
+  left: 90%;
+  -webkit-animation-delay: 9s, 1.5s;
+  animation-delay: 9s, 1.5s;
+}
+.snowflake:nth-of-type(22) {
+  left: 25%;
+  -webkit-animation-delay: 10s, 0s;
+  animation-delay: 10s, 0s;
+}
+.snowflake:nth-of-type(23) {
+  left: 65%;
+  -webkit-animation-delay: 9s, 2.5s;
+  animation-delay: 9s, 2.5s;
+}
+.snowflake:nth-of-type(24) {
+  left: 30%;
+  -webkit-animation-delay: 15s, 2s;
+  animation-delay: 18s, 2s;
+}
+.snowflake:nth-of-type(25) {
+  left: 40%;
+  -webkit-animation-delay: 11s, 2s;
+  animation-delay: 20s, 2s;
+}
+.snowflake:nth-of-type(26) {
+  left: 50%;
+  -webkit-animation-delay: 10s, 3s;
+  animation-delay: 10s, 3s;
+}
+.snowflake:nth-of-type(27) {
+  left: 60%;
+  -webkit-animation-delay: 12s, 2s;
+  animation-delay: 20s, 2s;
+}
+.snowflake:nth-of-type(28) {
+  left: 70%;
+  -webkit-animation-delay: 14s, 1s;
+  animation-delay: 19s, 1s;
+}
+.snowflake:nth-of-type(29) {
+  left: 80%;
+  -webkit-animation-delay: 16s, 0s;
+  animation-delay: 17s, 0s;
+}
+.snowflake:nth-of-type(30) {
+  left: 90%;
+  -webkit-animation-delay: 9s, 1.5s;
+  animation-delay: 17s, 1.5s;
+}
+.snowflake:nth-of-type(31) {
+  left: 25%;
+  -webkit-animation-delay: 18s, 0s;
+  animation-delay: 18s, 0s;
+}
+.snowflake:nth-of-type(32) {
+  left: 65%;
+  -webkit-animation-delay: 18s, 2.2s;
+  animation-delay: 18s, 2.2s;
+}
+.snowflake:nth-of-type(33) {
+  left: 65%;
+  -webkit-animation-delay: 22s, 2.7s;
+  animation-delay: 22s, 2.7s;
+}
+.snowflake:nth-of-type(34) {
+  left: 65%;
+  -webkit-animation-delay: 24s, 2.5s;
+  animation-delay: 24s, 2.5s;
+}
+.snowflake:nth-of-type(35) {
+  left: 65%;
+  -webkit-animation-delay: 21s, 2.5s;
+  animation-delay: 21s, 2.5s;
+}
+.snowflake:nth-of-type(36) {
+  left: 45%;
+  -webkit-animation-delay: 22s, 2.8s;
+  animation-delay: 22s, 2.8s;
+}
+.snowflake:nth-of-type(37) {
+  left: 15%;
+  -webkit-animation-delay: 24s, 1.3s;
+  animation-delay: 24s, 1.3s;
+}
+.snowflake:nth-of-type(38) {
+  left: 25%;
+  -webkit-animation-delay: 25s, 2.5s;
+  animation-delay: 25s, 2.5s;
+}
+.snowflake:nth-of-type(39) {
+  left: 85%;
+  -webkit-animation-delay: 27s, 2.8s;
+  animation-delay: 27s, 2.8s;
+}
+.snowflake:nth-of-type(40) {
+  left: 32%;
+  -webkit-animation-delay: 29s, 2.7s;
+  animation-delay: 29s, 2.7s;
+}
+.snowflake:nth-of-type(41) {
+  left: 72%;
+  -webkit-animation-delay: 26s, 1.5s;
+  animation-delay: 26s, 1.5s;
+}
+.snowflake:nth-of-type(42) {
+  left: 12%;
+  -webkit-animation-delay: 27.5s, 2.5s;
+  animation-delay: 27.5s, 2.5s;
+}
+.snowflake:nth-of-type(43) {
+  left: 5%;
+  -webkit-animation-delay: 27s, 2.55s;
+  animation-delay: 27s, 2.55s;
+}
+.snowflake:nth-of-type(44) {
+  left: 15%;
+  -webkit-animation-delay: 25.5s, 2.2s;
+  animation-delay: 25.5s, 2.2s;
+}
+.snowflake:nth-of-type(45) {
+  left: 55%;
+  -webkit-animation-delay: 29s, 2.5s;
+  animation-delay: 29s, 2.5s;
+}
+.snowflake:nth-of-type(46) {
+  left: 12%;
+  -webkit-animation-delay: 26s, 2.5s;
+  animation-delay: 22s, 2.5s;
+}
+.snowflake:nth-of-type(47) {
+  left: 18%;
+  -webkit-animation-delay: 27s, 6.5s;
+  animation-delay: 24s, 6.5s;
+}
+.snowflake:nth-of-type(48) {
+  left: 2%;
+  -webkit-animation-delay: 27s, 3.5s;
+  animation-delay: 27s, 3.5s;
+}
+.snowflake:nth-of-type(49) {
+  left: 22%;
+  -webkit-animation-delay: 25s, 4.5s;
+  animation-delay: 25s, 4.5s;
+}
+.snowflake:nth-of-type(50) {
+  left: 8%;
+  -webkit-animation-delay: 29s, 1.5s;
+  animation-delay: 29s, 1.5s;
+}
