@@ -277,7 +277,7 @@ header {
   letter-spacing: 5px;
 }
 .break {
-  border-top: solid rgb(221, 156, 14);
+  border-top: solid yellow;
   width: 30%;
   margin: 5rem auto 10rem;
 }
@@ -414,6 +414,15 @@ header {
 /*=====================
       Carosel Images
 =====================*/
+.test {
+  width: 150%;
+}
+.test1 {
+  background-color: grey;
+  width: 100%;
+  overflow: hidden;
+  filter: brightness(5%);
+}
 
 /*============================
               Bottom/Footer
