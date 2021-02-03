@@ -13,14 +13,30 @@ let slide3 = document.querySelector(".slide3");
 let follow = document.querySelector(".follow");
 let board = document.querySelector(".followme");
 let ex = document.querySelector(".fa-times");
+let youtube = document.querySelector(".you");
+let face = document.querySelector(".fa-facebook");
+let twit = document.querySelector(".fa-twitter");
+let insta = document.querySelector(".fa-instagram");
+
 let currentslide = slide1;
+let takeaway = () => {
+  face.classList.remove("ico");
+  twit.classList.remove("ico");
+  insta.classList.remove("ico");
+  youtube.classList.remove("ico");
+};
+
 ex.addEventListener("click", () => {
   board.style.width = "0";
   board.style.right = "1000%";
+  youtube.classList.toggle("youtuber");
 });
 follow.addEventListener("click", () => {
   board.style.width = "100%";
   board.style.right = "0";
+  takeaway();
+
+  youtube.classList.toggle("youtuber");
 });
 
 button.addEventListener("click", () => {

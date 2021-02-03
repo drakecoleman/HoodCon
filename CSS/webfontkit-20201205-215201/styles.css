@@ -254,6 +254,11 @@ header {
   font-size: 3rem;
   cursor: pointer;
 }
+.yu .youtuber {
+  font-size: 10rem;
+  transform: translate(-550%, -300%);
+}
+.
 
 /*=======================
        Top Icons
@@ -273,7 +278,7 @@ header {
 .fa-instagram {
   color: white;
 }
-.iconsTop div:hover > a i {
+.iconsTop div:hover > a .ico {
   transform: rotate(360deg);
 }
 
