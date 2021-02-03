@@ -15,9 +15,11 @@ let board = document.querySelector(".followme");
 let ex = document.querySelector(".fa-times");
 let currentslide = slide1;
 ex.addEventListener("click", () => {
+  board.style.width = "0";
   board.style.right = "1000%";
 });
 follow.addEventListener("click", () => {
+  board.style.width = "100%";
   board.style.right = "0";
 });
 

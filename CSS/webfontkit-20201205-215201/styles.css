@@ -14,6 +14,7 @@
 .Bod {
   display: none;
   transition: 2s ease;
+  overflow: hidden;
 }
 .body {
   overflow: hidden;
@@ -233,12 +234,13 @@ header {
 .followme {
   right: -1000%;
   height: 800px;
-  width: 100%;
+
   background-color: black;
   z-index: 3;
   position: absolute;
-  animation-fill-mode: forwards;
+
   transition: 1s;
+  overflow: hidden;
 }
 .xdiv {
   position: relative;
