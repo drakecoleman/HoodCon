@@ -246,15 +246,27 @@ header {
 /*=======================
                 Body
         =======================*/
+.test {
+  width: 150%;
+}
+.test1 {
+  position: absolute;
+  background-color: grey;
+  width: 100%;
+  overflow: hidden;
+  filter: brightness(10%);
+  z-index: -1;
+}
 
 .bodytitle,
 .bodytitle span {
   text-align: center;
-  margin-top: 10%;
+
   width: 100%;
   font-size: 6rem;
   font-family: "a_attack_graffitiregular";
   color: yellow;
+  overflow: hidden;
 }
 
 .first {
@@ -269,7 +281,7 @@ header {
 .bodytitle p {
   color: white;
   text-align: center;
-  width: 50%;
+  margin-top: 10%;
   font-family: "Josefin Sans", sans-serif;
   font-size: 5rem;
   line-height: 10rem;
@@ -279,7 +291,7 @@ header {
 .break {
   border-top: solid yellow;
   width: 30%;
-  margin: 5rem auto 10rem;
+  margin: 3rem auto 5rem;
 }
 .dos {
   width: 70%;
@@ -287,6 +299,10 @@ header {
 /*=======================
        Video
   =======================*/
+.latediv {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+}
 .bodytitle h3 {
   background: rgb(131, 58, 180);
   background: linear-gradient(
@@ -298,7 +314,7 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 8rem;
-  margin: 5rem auto;
+  margin: 5rem auto 1rem;
 }
 
 .watchbtn {
@@ -414,15 +430,6 @@ header {
 /*=====================
       Carosel Images
 =====================*/
-.test {
-  width: 150%;
-}
-.test1 {
-  background-color: grey;
-  width: 100%;
-  overflow: hidden;
-  filter: brightness(5%);
-}
 
 /*============================
               Bottom/Footer
