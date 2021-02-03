@@ -239,6 +239,10 @@ header {
   position: absolute;
   bottom: 25px;
   font-size: 2rem;
+  color: white;
+}
+.fa-instagram {
+  color: white;
 }
 .iconsTop div:hover > a i {
   transform: rotate(360deg);
@@ -348,7 +352,6 @@ header {
 .carosel {
   position: relative;
   height: 45rem;
-
   overflow: hidden;
 }
 .grafpic {
