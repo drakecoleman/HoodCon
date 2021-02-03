@@ -13,6 +13,7 @@
 }
 .Bod {
   display: none;
+  transition: 2s ease;
 }
 .body {
   overflow: hidden;
@@ -254,7 +255,7 @@ header {
   background-color: grey;
   width: 100%;
   overflow: hidden;
-  filter: brightness(10%);
+  filter: brightness(7%);
   z-index: -1;
 }
 
@@ -328,8 +329,11 @@ header {
   color: white;
   background-color: black;
   border: yellow solid;
+  transition: 1s ease-out;
+  cursor: pointer;
 }
 .watchbtn i {
+  transition: 0.7s ease-out;
   transform: rotate(0deg);
 }
 /*=====================
@@ -605,6 +609,12 @@ i {
 
 #bar:hover .hc {
   color: black;
+}
+.drakelink {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+  letter-spacing: 3px;
 }
 /*================================
         Merchandise Page
