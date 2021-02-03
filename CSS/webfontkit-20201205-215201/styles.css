@@ -369,21 +369,9 @@ header {
   padding: 45px;
   border-radius: 0.25rem;
   backdrop-filter: blur(2px);
-  box-shadow: inset 0px 0px 10px 10px #49fb35;
-  /* width: 150%; */
+  box-shadow: inset 0px 0px 10px 10px grey;
 }
-/* .inside p::after {
-  right: -50px;
-  bottom: 0;
-  position: absolute;
-  content: "";
-  height: 105px;
-  width: 55px;
-  background-color: RGB(73, 251, 53);
-  color: red;
-  z-index: -6;
-  filter: blur(20px);
-} */
+
 .slide {
   transition: 2s;
 }
