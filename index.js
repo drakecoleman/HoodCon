@@ -1,12 +1,8 @@
-// let youtube = document.querySelector(".yu");
-// let youtubeDiv = document.querySelector(".four");
-// let youtube2 = document.querySelector(".fa-youtube");
-
-// youtubeDiv.addEventListener("animationend", function () {
-//   youtube2.classList.toggle("testy2");
-// });
-let follow = document.querySelector(".follow");
-let board = document.querySelector(".followme");
-follow.addEventListener("click", () => {
-  board.classList.add("fellowme");
+let express = require("express");
+let app = express();
+let PORT = process.env.PORT || 5000;
+app.use(express.static("public"));
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "public/index.html");
 });
+app.listen(PORT, () => console.log("Working"));
