@@ -455,18 +455,7 @@ header {
   font-size: 2rem;
 }
 .inside p {
-  /* background-color: rgba(255, 255, 255, 0.3);
-  background: rgb(131, 58, 180);
-  background: linear-gradient(
-    90deg,
-    rgb(201, 236, 118) 0%,
-    rgba(253, 29, 29, 1) 50%,
-    rgba(252, 176, 69, 1) 100%
-  );
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
-  color: yellow;
+  color: rgb(204, 204, 0);
   font-family: "Josefin Sans", sans-serif;
   font-weight: bolder;
   font-size: 2.2rem;
@@ -482,7 +471,7 @@ header {
 }
 .slide1 {
   position: absolute;
-  color: red;
+
   transform: translate(0);
 }
 .slide2,
@@ -490,6 +479,7 @@ header {
   position: absolute;
   transform: translate(300%);
 }
+
 .left {
   opacity: 0;
   transition: 4s;
@@ -516,9 +506,6 @@ header {
   color: white;
   background-color: black;
 }
-/*=====================
-      Carosel Images
-=====================*/
 
 /*============================
               Bottom/Footer
@@ -646,6 +633,7 @@ i {
 
 #bar {
   position: absolute;
+  border-radius: 50%;
 }
 .bar {
   background-color: black;
@@ -659,61 +647,28 @@ i {
   z-index: 10;
   animation-fill-mode: forwards;
 }
+.bar img {
+  width: 100%;
+  border: solid white;
+  border-radius: 50%;
+}
 
 #bar:hover .bar {
   transform: rotateY(5040deg);
-
-  color: white;
+  border-radius: 50%;
 }
 
-.hc {
-  color: gold;
-  font-size: 4rem;
-  text-shadow: #000;
-}
-#h,
-#c {
-  position: absolute;
-  font-family: "coolregular";
-}
-
-#h {
-  top: -4%;
-  left: 20%;
-}
-#c {
-  left: 37%;
-  top: 20%;
-}
-
-#bar:hover .hc {
-  color: white;
-}
 .drakelink {
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: white;
   letter-spacing: 3px;
 }
-/*================================
-        Merchandise Page
-================================*/
+
 /*================================
         Mobile Design
 ================================*/
 
-/* .popup {
-  position: absolute;
-  z-index: 100;
-  width: 100%;
-  background: rgba(25, 98, 0, 0.5);
-  align-items: center;
-}
-.popup p {
-  height: 49.2rem;
-  margin: 20% 5px auto 15px;
-  font-size: 2rem;
-} */
 .viddiv {
   overflow: hidden;
   padding-bottom: 56.25%;
