@@ -2,7 +2,7 @@
   "name": "hood",
   "version": "1.0.0",
   "description": "Hood Conservative Site",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
     "start": "node index.js"
