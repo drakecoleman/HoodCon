@@ -249,11 +249,12 @@ header {
   position: absolute;
   cursor: pointer;
 }
-.ulTop li:hover > a {
-  background-color: black;
+.ulTop li:hover > .ani {
+  background: black;
   color: white;
   border-radius: 20%;
   border: solid grey;
+  background-color: rgba(0,0,0,1);
 }
 /*=======================
        Follow Me
