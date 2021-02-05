@@ -4,6 +4,22 @@
 .form {
   background-color: white;
 }
+.tit {
+  font-size: 14rem;
+  margin-bottom: -45px;
+  text-align: center;
+}
+.tit2 {
+  position: absolute;
+  left: 20%;
+  top: 300px;
+}
+.ani3 {
+  color: rgba(156, 141, 1, 1);
+  font-family: "coolregular";
+  font-size: 6rem;
+  letter-spacing: 15px;
+}
 * {
   margin: 0;
   box-sizing: border-box;
