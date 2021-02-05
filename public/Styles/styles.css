@@ -1,6 +1,9 @@
 /*========================
               Body and Global
           ========================*/
+.form {
+  background-color: white;
+}
 * {
   margin: 0;
   box-sizing: border-box;
@@ -207,43 +210,49 @@ header {
   width: 100%;
   margin-top: 25px;
 }
- .ani {
-	background: #222 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
-	-webkit-background-size: 450px;
-	color: rgba(156, 141, 1, 0.5);
-	-webkit-background-clip: text;
-	-webkit-animation-name: shine;
-	-webkit-animation-duration: 2s;
-	-webkit-animation-iteration-count: infinite;
-	/* text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5); */
+.ani {
+  background: #222 -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#222),
+      to(#222),
+      color-stop(0.5, #fff)
+    ) 0 0 no-repeat;
+  -webkit-background-size: 450px;
+  color: rgba(156, 141, 1, 0.5);
+  -webkit-background-clip: text;
+  -webkit-animation-name: shine;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  /* text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5); */
 }
-
-
 
 @-webkit-keyframes shine {
-	0%, 10% {
-		background-position: -100%;
-	}
-	20% {
-		background-position: top left;
-	}
-	90% {
-		background-position: top right;
-	}
-	100% {
-		background-position: 100%;
-	}
+  0%,
+  10% {
+    background-position: -100%;
+  }
+  20% {
+    background-position: top left;
+  }
+  90% {
+    background-position: top right;
+  }
+  100% {
+    background-position: 100%;
+  }
 }
-.fol{
-  animation-delay: .5s;
+.fol {
+  animation-delay: 0.5s;
 }
-.mer{
+.mer {
   animation-delay: 1s;
 }
-.wat{
+.wat {
   animation-delay: 1.5s;
 }
-.abo{
+.abo {
   animation-delay: 2s;
 }
 
@@ -255,7 +264,7 @@ header {
 
 .ulTop li a {
   text-decoration: none;
- 
+
   transition: 0.7s;
   padding: 5px;
   position: absolute;
@@ -266,7 +275,7 @@ header {
   color: white;
   border-radius: 20%;
   border: solid grey;
-  background-color: rgba(0,0,0,1);
+  background-color: rgba(0, 0, 0, 1);
   padding: 10px;
 }
 /*=======================
@@ -391,7 +400,6 @@ header {
   font-family: "a_attack_graffitiregular";
   color: yellow;
   overflow: hidden;
-  
 }
 
 .first {
@@ -426,13 +434,13 @@ header {
 /*=======================
        Video
   =======================*/
- .viddiv{
+.viddiv {
   text-align: center;
-   }
- .streamline{
- width: 70%;
- }
- .video{
+}
+.streamline {
+  width: 70%;
+}
+.video {
   height: 0;
   padding-bottom: 56.25%; /* 16:9 */
   position: relative;
@@ -454,32 +462,31 @@ h1 {
   margin: 5rem auto 3rem;
   letter-spacing: 5px;
   transition: 5s;
- }
- .ani2{
-	/* background: #222 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat; */
-	-webkit-background-size: 450px;
-	color: rgba(156, 141, 1, 0.5);
-	-webkit-background-clip: text;
-	-webkit-animation: shine2 ease-in-out 8s ;
-	/* -webkit-animation-duration: 10s; */
-	-webkit-animation-iteration-count: infinite;
-	
+}
+.ani2 {
+  /* background: #222 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat; */
+  -webkit-background-size: 450px;
+  color: rgba(156, 141, 1, 0.5);
+  -webkit-background-clip: text;
+  -webkit-animation: shine2 ease-in-out 8s;
+  /* -webkit-animation-duration: 10s; */
+  -webkit-animation-iteration-count: infinite;
 }
 @-webkit-keyframes shine2 {
-	0% {
-		background-position: -100%;
-	}
+  0% {
+    background-position: -100%;
+  }
 
-	100% {
-		background-position: 100%;
-	}
+  100% {
+    background-position: 100%;
+  }
 }
-iframe{
-   position: absolute;
-   left: 10%;
- width: 80%; 
+iframe {
+  position: absolute;
+  left: 10%;
+  width: 80%;
   height: 100%;
- }
+}
 
 .watchbtn {
   margin-top: 2rem;
@@ -507,7 +514,7 @@ iframe{
 /*=====================
       Carosel
 =====================*/
-.tre{
+.tre {
   width: 90%;
 }
 
@@ -557,15 +564,13 @@ iframe{
 .slide1 {
   position: absolute;
 
-
   transform: translate(0);
 }
-.slide2, .slide3 {
+.slide2,
+.slide3 {
   position: absolute;
   transform: translate(300%);
 }
-
-
 
 .left {
   opacity: 0;
@@ -756,7 +761,6 @@ i {
         Mobile Design
 ================================*/
 
-
 /*
 @media screen and (max-width: 480px) {
   .begin {
@@ -897,7 +901,7 @@ i {
   /* .caroselsection {
     position: relative;
   } */
-  .btnpadd {
+/* .btnpadd {
     position: relative;
   }
   .caroselsection span {
@@ -922,7 +926,7 @@ i {
   .pcon {
     right: 50px;
   }
-} */
+}  */
 /*=======================
                 Snow
           =======================*/
@@ -1249,35 +1253,3 @@ i {
   -webkit-animation-delay: 29s, 1.5s;
   animation-delay: 29s, 1.5s;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
