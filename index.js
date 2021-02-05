@@ -8,8 +8,8 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "public/index.html");
 });
 app.post("/", function (req, res) {
-  console.log(req.body.num1 + req.body.num2);
-  // res.send("Working");
+  alert(req.body.num1 + req.body.num2);
+  // res.send(req.body.num1);
 });
 app.listen(PORT, () => {
   console.log("Working");
