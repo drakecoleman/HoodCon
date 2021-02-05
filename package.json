@@ -17,6 +17,9 @@
     "type": "git",
     "url": "git+https://github.com/drakecoleman/HoodCon.git"
   },
+  "engines": {
+    "node": "14.15.3"
+  },
   "author": "Drake",
   "license": "ISC",
   "bugs": {
