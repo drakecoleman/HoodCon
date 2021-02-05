@@ -207,6 +207,33 @@ header {
   width: 100%;
   margin-top: 25px;
 }
+ .ani {
+	background: #222 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
+	-webkit-background-size: 450px;
+	color: rgba(156, 141, 1, 0.5);
+	-webkit-background-clip: text;
+	-webkit-animation-name: shine;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+	/* text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5); */
+}
+
+
+
+@-webkit-keyframes shine {
+	0%, 10% {
+		background-position: -100%;
+	}
+	20% {
+		background-position: top left;
+	}
+	90% {
+		background-position: top right;
+	}
+	100% {
+		background-position: 100%;
+	}
+}
 
 .ulTop {
   display: flex;
@@ -216,7 +243,7 @@ header {
 
 .ulTop li a {
   text-decoration: none;
-  color: black;
+ 
   transition: 0.7s;
   padding: 5px;
   position: absolute;
@@ -1188,3 +1215,35 @@ i {
   -webkit-animation-delay: 29s, 1.5s;
   animation-delay: 29s, 1.5s;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
