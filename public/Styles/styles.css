@@ -333,22 +333,24 @@ header {
 }
 .test1 {
   position: absolute;
-  background-color: grey;
+  top: 10px;
   width: 100%;
   overflow: hidden;
-  filter: brightness(18%);
+  filter: brightness(20%);
   z-index: -1;
 }
 
 .bodytitle,
 .bodytitle span {
   text-align: center;
+  position: relative;
 
   width: 100%;
   font-size: 6rem;
   font-family: "a_attack_graffitiregular";
   color: yellow;
   overflow: hidden;
+  
 }
 
 .first {
@@ -372,7 +374,7 @@ header {
 }
 .break {
   border-top: solid yellow;
-  width: 30%;
+  width: 45%;
   margin: 3rem auto 5rem;
 }
 .dos {
@@ -383,11 +385,21 @@ header {
 /*=======================
        Video
   =======================*/
-.latediv {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 15px;
+ .viddiv{
+  text-align: center;
+   }
+ .streamline{
+ width: 70%;
+ }
+ .video{
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 */
+  position: relative;
+  justify-content: center;
 }
-.bodytitle h3 {
+
+h1 {
+  text-align: center;
   background: rgb(131, 58, 180);
   background: linear-gradient(
     90deg,
@@ -398,10 +410,18 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 8rem;
-  margin: 5rem auto 1rem;
-}
+  margin: 5rem auto 3rem;
+  letter-spacing: 5px;
+ }
+iframe{
+   position: absolute;
+   left: 10%;
+ width: 80%; 
+  height: 100%;
+ }
 
 .watchbtn {
+  margin-top: 2rem;
   background-color: white;
   color: black;
   border-radius: 0.25rem;
@@ -426,6 +446,9 @@ header {
 /*=====================
       Carosel
 =====================*/
+.tre{
+  width: 90%;
+}
 
 .carosel {
   position: relative;
@@ -435,7 +458,7 @@ header {
 .grafpic {
   width: 100%;
   position: absolute;
-  /* filter: brightness(60%); */
+  filter: brightness(60%);
   height: 100%;
 }
 .inside {
@@ -449,12 +472,12 @@ header {
   width: 30%;
   border-radius: 50%;
 }
-.inside h2 {
+.inside .slide h2 {
   margin-top: 10px;
   color: yellow;
   font-size: 2rem;
 }
-.inside p {
+.inside .slide p {
   color: rgb(204, 204, 0);
   font-family: "Josefin Sans", sans-serif;
   font-weight: bolder;
@@ -463,22 +486,25 @@ header {
   padding: 45px;
   border-radius: 0.25rem;
   backdrop-filter: blur(2px);
-  box-shadow: inset 0px 0px 10px 10px grey;
+  box-shadow: inset 0px 0px 10px 10px white;
 }
 
 .slide {
   transition: 2s;
+  overflow: hidden;
 }
 .slide1 {
   position: absolute;
 
+
   transform: translate(0);
 }
-.slide2,
-.slide3 {
+.slide2, .slide3 {
   position: absolute;
   transform: translate(300%);
 }
+
+
 
 .left {
   opacity: 0;
@@ -669,19 +695,8 @@ i {
         Mobile Design
 ================================*/
 
-.viddiv {
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  position: relative;
-  height: 0;
-}
-.viddiv iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-}
+
+/*
 @media screen and (max-width: 480px) {
   .begin {
     display: none;
@@ -846,7 +861,7 @@ i {
   .pcon {
     right: 50px;
   }
-}
+} */
 /*=======================
                 Snow
           =======================*/
