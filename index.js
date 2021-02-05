@@ -6,7 +6,7 @@ let PORT = process.env.PORT || 5000;
 app.use(express.static("public"));
 app.get("/", (req, res) => {
   console.log(req.body.num1);
-  res.sendFile(__dirname + "/public/index.html");
+  res.sendFile(__dirname + "/publicjhghjjhhj/index.html");
 });
 app.post("/", function (req, res) {
   console.log(req.body.num1);
