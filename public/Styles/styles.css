@@ -1,6 +1,24 @@
 /*========================
               Body and Global
           ========================*/
+
+/*
+           Cool Colors
+
+
+
+           
+           background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  
+  */
 .form {
   background-color: white;
 }
@@ -8,17 +26,20 @@
   font-size: 14rem;
   margin-bottom: -45px;
   text-align: center;
+  overflow: hidden;
 }
 .tit2 {
   position: absolute;
   left: 20%;
   top: 300px;
+  overflow: hidden;
 }
 .ani3 {
   color: rgba(156, 141, 1, 1);
   font-family: "coolregular";
   font-size: 6rem;
   letter-spacing: 15px;
+  overflow: hidden;
 }
 * {
   margin: 0;
@@ -57,13 +78,8 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(
-    90deg,
-    rgba(131, 58, 180, 1) 0%,
-    rgba(253, 29, 29, 1) 50%,
-    rgba(252, 176, 69, 1) 100%
-  );
   border-radius: 10px;
+  background-color: gold;
 }
 
 /*-------------------------
@@ -297,7 +313,8 @@ header {
 /*=======================
        Follow Me
   =======================*/
-.followme {
+.followme,
+.form {
   right: 200%;
   height: 800px;
   text-align: right;
@@ -336,7 +353,8 @@ header {
 .xdiv {
   position: relative;
 }
-.fa-times {
+.fas1,
+.fas2 {
   color: yellow;
   position: absolute;
   top: 25px;
@@ -386,10 +404,6 @@ header {
 .iconsTop div:hover > a .ico {
   transform: rotate(360deg);
 }
-
-/*=======================
-      Social Keyframes
-  =======================*/
 
 /*=======================
                 Body
@@ -463,31 +477,16 @@ header {
   justify-content: center;
 }
 
-h1 {
+.viddiv .ani2 {
   text-align: center;
-  background: rgb(131, 58, 180);
-  background: linear-gradient(
-    90deg,
-    rgba(131, 58, 180, 1) 0%,
-    rgba(253, 29, 29, 1) 50%,
-    rgba(252, 176, 69, 1) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: rgba(206, 185, 0, 0.7);
   font-size: 8rem;
   margin: 5rem auto 3rem;
   letter-spacing: 5px;
   transition: 5s;
+  font-weight: lighter;
 }
-.ani2 {
-  /* background: #222 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat; */
-  -webkit-background-size: 450px;
-  color: rgba(156, 141, 1, 0.5);
-  -webkit-background-clip: text;
-  -webkit-animation: shine2 ease-in-out 8s;
-  /* -webkit-animation-duration: 10s; */
-  -webkit-animation-iteration-count: infinite;
-}
+
 @-webkit-keyframes shine2 {
   0% {
     background-position: -100%;

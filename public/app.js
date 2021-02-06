@@ -12,12 +12,15 @@ let slide2 = document.querySelector(".slide2");
 let slide3 = document.querySelector(".slide3");
 let follow = document.querySelector(".follow");
 let board = document.querySelector(".followme");
-let ex = document.querySelector(".fa-times");
+let ex1 = document.querySelector(".fas1");
 let youtube = document.querySelector(".you");
 let face = document.querySelector(".fa-facebook");
 let twit = document.querySelector(".fa-twitter");
 let insta = document.querySelector(".fa-instagram");
 let dipshit = document.querySelector(".dippy");
+let contact = document.querySelector(".contact");
+let form = document.querySelector(".form");
+let ex2 = document.querySelector(".fas2");
 
 let currentslide = slide1;
 let takeaway = () => {
@@ -41,7 +44,7 @@ let giveaway = () => {
   dipshit.classList.remove("dipshit");
 };
 
-ex.addEventListener("click", () => {
+ex1.addEventListener("click", () => {
   board.style.width = "0";
   board.style.right = "1000%";
   youtube.classList.toggle("youtuber");
@@ -51,8 +54,16 @@ follow.addEventListener("click", () => {
   board.style.width = "100%";
   board.style.right = "0";
   takeaway();
-
   youtube.classList.toggle("youtuber");
+});
+
+ex2.addEventListener("click", () => {
+  form.style.width = "0";
+  form.style.right = "1000%";
+});
+contact.addEventListener("click", () => {
+  form.style.width = "100%";
+  form.style.right = "0";
 });
 
 button.addEventListener("click", () => {

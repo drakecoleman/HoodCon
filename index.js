@@ -9,16 +9,7 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "public/index.html");
 });
 app.post("/", function (req, res) {
-  let email = req.body.email;
-  let body = req.body.body1;
-  let subject = req.body.subject;
-  sendMail(email, subject, body, function (err, data) {
-    if (err) {
-      console.log(err);
-    } else {
-      console.log("Success");
-    }
-  });
+  // node form
   res.send("Sent");
 });
 app.listen(PORT, () => {
