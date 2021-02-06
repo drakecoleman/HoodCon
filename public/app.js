@@ -47,12 +47,14 @@ let giveaway = () => {
 ex1.addEventListener("click", () => {
   board.style.width = "0";
   board.style.right = "1000%";
+  body.style.overflow = "visible";
   youtube.classList.toggle("youtuber");
   giveaway();
 });
 follow.addEventListener("click", () => {
   board.style.width = "100%";
   board.style.right = "0";
+  body.style.overflow = "hidden";
   takeaway();
   youtube.classList.toggle("youtuber");
 });
@@ -60,10 +62,12 @@ follow.addEventListener("click", () => {
 ex2.addEventListener("click", () => {
   form.style.width = "0";
   form.style.right = "1000%";
+  body.style.overflow = "visible";
 });
 contact.addEventListener("click", () => {
   form.style.width = "100%";
   form.style.right = "0";
+  body.style.overflow = "hidden";
 });
 
 button.addEventListener("click", () => {

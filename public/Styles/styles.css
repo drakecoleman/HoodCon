@@ -363,6 +363,10 @@ header {
   font-size: 3rem;
   cursor: pointer;
 }
+.x:hover > .fa-times {
+  transform: rotate(180deg);
+  transition: 0.3s;
+}
 .yu .youtuber {
   transition: 1.5s;
   font-size: 12rem;
@@ -388,23 +392,43 @@ header {
 .form {
   align-items: center;
   display: flex;
+
   flex-direction: column;
   font-family: Georgia, "Times New Roman", Times, serif;
-  padding-top: 25rem;
+  padding-top: 6rem;
   z-index: 4;
+  transition: 0.8s ease;
+  color: white;
+}
+.form p {
+  letter-spacing: 10px;
+  line-height: 5rem;
+  font-size: 3.5rem;
 }
 form {
+  margin-top: 3rem;
   position: relative;
-  border: solid red;
+}
+
+.img123 {
+  position: absolute;
+  width: 80%;
+  left: -500px;
+  bottom: -310px;
+  z-index: -1;
+  filter: brightness(30%);
 }
 .gen {
   width: 45%;
 }
 input {
+  border-radius: 0.25rem;
+  border: solid grey;
   font-family: Georgia, "Times New Roman", Times, serif;
   display: block;
   font-size: 2rem;
-  padding: 25px;
+  padding: 5px;
+  cursor: pointer;
 }
 .send {
   position: absolute;
@@ -495,6 +519,7 @@ input {
   =======================*/
 .viddiv {
   text-align: center;
+  margin-top: 15rem;
 }
 .streamline {
   width: 70%;
@@ -506,7 +531,7 @@ input {
   justify-content: center;
 }
 
-.viddiv .ani2 {
+.ani2 {
   text-align: center;
   color: rgba(206, 185, 0, 0.7);
   font-size: 8rem;
@@ -614,6 +639,9 @@ iframe {
 .slide3 {
   position: absolute;
   transform: translate(300%);
+}
+.slide3 {
+  z-index: 0;
 }
 
 .left {
