@@ -13,6 +13,7 @@ app.post("/", function (req, res) {
   let body = req.body.body;
   let subject = req.body.subject;
   sendMail(email, subject, body);
+  res.send("Sent");
 });
 app.listen(PORT, () => {
   console.log("Working");
