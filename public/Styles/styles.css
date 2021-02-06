@@ -154,8 +154,8 @@
 }
 
 #favor {
-  transform: translate(-1600px, 300px);
-  animation: favorite 8.5s;
+  transform: translate(-1600px, 400px);
+  animation: favorite 8s;
   animation-delay: 1.2s;
   font-size: 10rem;
 }
@@ -164,7 +164,7 @@
 #cuzzo {
   transform: translate(-300px, -350px);
   font-size: 15rem;
-  animation: unk 2.5s;
+  animation: unk 2.2s;
 }
 #uncle {
   animation-delay: 3s;
@@ -174,7 +174,7 @@
 }
 
 @keyframes unk {
-  60% {
+  50% {
     transform: translate(-300px, 250px);
   }
   100% {
@@ -238,10 +238,12 @@
   filter: brightness(60%);
 }
 header {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   width: 100%;
   margin-top: 25px;
+  position: fixed;
+  z-index: 5;
 }
 .ani {
   background: #222 -webkit-gradient(
