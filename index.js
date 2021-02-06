@@ -10,7 +10,7 @@ app.get("/", (req, res) => {
 });
 app.post("/", function (req, res) {
   let email = req.body.email;
-  let body = req.body.body;
+  let body = req.body1.body;
   let subject = req.body.subject;
   sendMail(email, subject, body);
   res.send("Sent");
