@@ -8,7 +8,6 @@ const auth = {
       "https://api.mailgun.net/v3/sandbox6d26ca9e03e84b26ae54ac0bf7a4bf05.mailgun.org",
   },
 };
-const transporter = nodemailer.createTransport(mailGun(auth));
 
 const sendMail = (email, subject, text, cb) => {
   const mailOptions = {
