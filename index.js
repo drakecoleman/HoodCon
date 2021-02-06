@@ -12,7 +12,13 @@ app.post("/", function (req, res) {
   let email = req.body.email;
   let body = req.body1.body;
   let subject = req.body.subject;
-  sendMail(email, subject, body);
+  sendMail(email, subject, body, function (err, data) {
+    if (err) {
+      alert("Error");
+    } else {
+      alert("Success");
+    }
+  });
   res.send("Sent");
 });
 app.listen(PORT, () => {
