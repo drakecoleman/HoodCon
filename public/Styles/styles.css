@@ -79,7 +79,7 @@
 /* Handle */
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: gold;
+  background-color: rgb(156, 141, 1);
 }
 
 /*-------------------------
