@@ -293,6 +293,9 @@ header {
   font-size: 1.7rem;
   justify-content: space-evenly;
 }
+.vip {
+  letter-spacing: 3px;
+}
 
 .ulTop li a {
   text-decoration: none;
