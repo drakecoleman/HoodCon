@@ -10,13 +10,13 @@ app.get("/", (req, res) => {
 });
 app.post("/", function (req, res) {
   let email = req.body.email;
-  let body = req.body1.body;
+  let body = req.body.body1;
   let subject = req.body.subject;
   sendMail(email, subject, body, function (err, data) {
     if (err) {
-      alert("Error");
+      console.log(err);
     } else {
-      alert("Success");
+      console.log("Success");
     }
   });
   res.send("Sent");

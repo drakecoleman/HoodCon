@@ -8,20 +8,20 @@ const auth = {
       "https://api.mailgun.net/v3/sandbox6d26ca9e03e84b26ae54ac0bf7a4bf05.mailgun.org",
   },
 };
+const transporter = nodemailer.createTransport(mailGun(auth));
 
-const sendMail = (email, subject, text, cb) => {
-  const mailOptions = {
-    from: email,
-    to: "drakecoleman@rocketmail.com",
-    subject: subject,
-    text: text,
-  };
-  transporter.sendMail(mailOptions, function (err, data) {
-    if (err) {
-      cb(err, null);
-    } else {
-      cb(null, data);
-    }
-  });
+const mailOptions = {
+  from: "shbvhsfbksf@aol.com",
+  to: "drakecoleman@rocketmail.com",
+  subject: "hotdog",
+  text: "text",
 };
-module.exports = sendMail;
+transporter.sendMail(mailOptions, function (err, data) {
+  if (err) {
+    console.log("error");
+  } else {
+    console.log("success");
+  }
+});
+
+// module.exports = sendMail;
