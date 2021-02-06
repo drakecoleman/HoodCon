@@ -310,9 +310,9 @@ header {
   background-color: rgba(0, 0, 0, 1);
   padding: 10px;
 }
-/*=======================
-       Follow Me
-  =======================*/
+/*===========================================
+       Follow Me/With a little bit of the form
+  ===========================================*/
 .followme,
 .form {
   right: 200%;
@@ -382,7 +382,36 @@ header {
 .dipshit {
   transform: translate(300%);
 }
-
+/*===========================================
+      Contact form
+  ===========================================*/
+.form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-top: 25rem;
+  z-index: 4;
+}
+form {
+  position: relative;
+  border: solid red;
+}
+.gen {
+  width: 45%;
+}
+input {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: block;
+  font-size: 2rem;
+  padding: 25px;
+}
+.send {
+  position: absolute;
+  right: -80%;
+  bottom: 0;
+  cursor: pointer;
+}
 /*=======================
        Top Icons
   =======================*/
