@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const sendMail = require("./form");
+const sendMail = require("./form.js");
 const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: true }));
 const PORT = process.env.PORT || 5000;
@@ -12,7 +12,7 @@ app.post("/", function (req, res) {
   let email = req.body.email;
   let body = req.body.body;
   let subject = req.body.subject;
-  res.sendMail(email, subject, body);
+  sendMail(email, subject, body);
 });
 app.listen(PORT, () => {
   console.log("Working");
