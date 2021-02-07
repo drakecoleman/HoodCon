@@ -1047,6 +1047,9 @@ i {
   .footer {
     margin: 0 auto;
   }
+  .drakelink {
+    font-size: 0.5rem;
+  }
   /*========================
              snowflakes
           ========================*/
