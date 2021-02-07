@@ -333,7 +333,7 @@ header {
   text-align: right;
 
   background-color: black;
-  z-index: 3;
+  z-index: 6;
   position: absolute;
 
   transition: 1s;
@@ -454,6 +454,7 @@ input {
   =======================*/
 .iconImgDiv {
   position: relative;
+  z-index: 7;
 }
 .iconsTop {
   z-index: 3;
@@ -546,12 +547,25 @@ input {
 
 .ani2 {
   text-align: center;
-  color: rgba(206, 185, 0, 0.7);
   font-size: 8rem;
   margin: 5rem auto 3rem;
   letter-spacing: 5px;
-  transition: 5s;
-  font-weight: lighter;
+  filter: drop-shadow(0px 0px 20px gold);
+
+  background: #222 -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#222),
+      to(#222),
+      color-stop(0.5, #fff)
+    ) 0 0 no-repeat;
+  -webkit-background-size: 450px;
+  color: rgba(156, 141, 1, 0.2);
+  -webkit-background-clip: text;
+  -webkit-animation-name: shine;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes shine2 {
