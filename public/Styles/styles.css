@@ -1055,6 +1055,9 @@ i {
     flex-direction: column;
     justify-content: space-between;
   }
+  .testparent2 {
+    width: 100%;
+  }
   /*========================
             Carosel
           ========================*/
