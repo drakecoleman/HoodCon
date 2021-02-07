@@ -23,7 +23,7 @@
   background-color: white;
 }
 .tit {
-  font-size: 14rem;
+  /* font-size: 14rem; */
   margin-bottom: -45px;
   text-align: center;
   overflow: hidden;
@@ -31,8 +31,11 @@
 .tit2 {
   position: absolute;
   left: 20%;
-  top: 300px;
+  top: 30%;
   overflow: hidden;
+  filter: drop-shadow(8px 10px 5px #9c8d01);
+  max-width: 100%;
+  font-size: 14rem;
 }
 .ani3 {
   color: rgba(156, 141, 1, 1);
@@ -550,7 +553,7 @@ input {
   font-size: 8rem;
   margin: 5rem auto 3rem;
   letter-spacing: 5px;
-  filter: drop-shadow(0px 0px 20px gold);
+  filter: drop-shadow(0px 0px 20px #9c8d01);
 
   background: #222 -webkit-gradient(
       linear,
@@ -561,7 +564,7 @@ input {
       color-stop(0.5, #fff)
     ) 0 0 no-repeat;
   -webkit-background-size: 450px;
-  color: rgba(156, 141, 1, 0.2);
+  color: rgba(245, 221, 7, 0.5);
   -webkit-background-clip: text;
   -webkit-animation-name: shine;
   -webkit-animation-duration: 2s;
@@ -858,9 +861,13 @@ i {
 
 /*================================
         Mobile Design
+ 320px — 480px: Mobile devices.
+481px — 768px: iPads, Tablets.
+769px — 1024px: Small screens, laptops.
+1025px — 1200px: Desktops, large screens.
+1201px and more — Extra large screens, TV.
 ================================*/
 
-/*
 @media screen and (max-width: 480px) {
   .begin {
     display: none;
@@ -997,10 +1004,10 @@ i {
     font-size: 3rem;
     line-height: 7rem;
   }
-  /* .caroselsection {
+  .caroselsection {
     position: relative;
-  } */
-/* .btnpadd {
+  }
+  */ .btnpadd {
     position: relative;
   }
   .caroselsection span {
@@ -1025,7 +1032,7 @@ i {
   .pcon {
     right: 50px;
   }
-}  */
+}
 /*=======================
                 Snow
           =======================*/
