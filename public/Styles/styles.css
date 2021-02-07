@@ -984,7 +984,7 @@ i {
   .test2img {
     display: block;
     position: absolute;
-    filter: brightness(100%);
+    filter: brightness(30%);
     z-index: -1;
     left: -15px;
     width: 110%;
