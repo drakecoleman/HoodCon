@@ -902,12 +902,16 @@ i {
     position: absolute;
     width: 130%;
     z-index: -1;
+    overflow: hidden;
 
     filter: brightness(20%);
     margin: 70% 10%;
   }
   .ani3 {
     letter-spacing: 1px;
+  }
+  .ani2 {
+    overflow: hidden;
   }
 
   .tit2 {
@@ -921,6 +925,7 @@ i {
     line-height: 60%;
     height: 100vh;
     padding-top: 8rem;
+    overflow: hidden;
   }
   body,
   .body,
