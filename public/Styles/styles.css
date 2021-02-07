@@ -1007,6 +1007,9 @@ i {
   .watchbtn {
     font-size: 1rem;
   }
+  .dos {
+    margin: 0 auto;
+  }
 
   /*========================
              Footer
