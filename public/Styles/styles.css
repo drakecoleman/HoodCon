@@ -3,6 +3,7 @@
           ========================*/
 
 /*
+
            Cool Colors
 
 
@@ -19,9 +20,29 @@
   -webkit-text-fill-color: transparent; 
   
   */
+@media only screen and (min-width: 480px) {
+  .ani {
+    background: #222 -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(#222),
+        to(#222),
+        color-stop(0.5, #fff)
+      ) 0 0 no-repeat;
+    -webkit-background-size: 450px;
+    color: rgba(156, 141, 1, 0.5);
+    -webkit-background-clip: text;
+    -webkit-animation-name: shine;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    /* text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5); */
+  }
+}
 .form {
   background-color: white;
 }
+
 .tit {
   /* font-size: 14rem; */
   margin-bottom: -45px;
@@ -251,23 +272,6 @@ header {
   margin-top: 25px;
   position: fixed;
   z-index: 5;
-}
-.ani {
-  background: #222 -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(#222),
-      to(#222),
-      color-stop(0.5, #fff)
-    ) 0 0 no-repeat;
-  -webkit-background-size: 450px;
-  color: rgba(156, 141, 1, 0.5);
-  -webkit-background-clip: text;
-  -webkit-animation-name: shine;
-  -webkit-animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-  /* text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5); */
 }
 
 @-webkit-keyframes shine {
@@ -946,6 +950,23 @@ i {
   }
   .ani3 {
     font-size: 2.5rem;
+  }
+  .ani4 {
+    background: #222 -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(#222),
+        to(#222),
+        color-stop(0.5, #fff)
+      ) 0 0 no-repeat;
+    -webkit-background-size: 100px;
+    color: rgba(156, 141, 1, 0.5);
+    -webkit-background-clip: text;
+    -webkit-animation-name: shine;
+    -webkit-animation-duration: 2.5s;
+    -webkit-animation-iteration-count: infinite;
+    /* text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5); */
   }
   /*========================
             Middle/Body Heading Text

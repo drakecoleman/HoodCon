@@ -21,6 +21,7 @@ let dipshit = document.querySelector(".dippy");
 let contact = document.querySelector(".contact");
 let form = document.querySelector(".form");
 let ex2 = document.querySelector(".fas2");
+let hood = document.querySelector(".tit");
 
 let currentslide = slide1;
 let takeaway = () => {
@@ -120,5 +121,14 @@ right.addEventListener("click", function () {
     slide3.style.transform = "translate(0)";
     right.style.opacity = "0";
     currentslide = slide3;
+  }
+});
+$(window).on("resize", function () {
+  if ($(window).width() < 480) {
+    $(".tit").addClass("ani4");
+    $(".tit").removeClass("ani");
+  } else {
+    $(".tit").addClass("ani");
+    $(".tit").removeClass("ani4");
   }
 });
