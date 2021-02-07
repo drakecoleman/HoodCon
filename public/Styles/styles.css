@@ -231,10 +231,12 @@
   }
 }
 
-/*=======================
+/*======================
                 Top/Header for Index
           =======================*/
-
+.mobileimage {
+  display: none;
+}
 .bgimg {
   width: 100%;
   margin: 0;
@@ -869,17 +871,71 @@ i {
 ================================*/
 
 @media screen and (max-width: 480px) {
+  /*========================
+              Body and Global
+          ========================*/
   .begin {
     display: none;
   }
   #bod {
     display: block;
   }
-  .bgimg {
-    width: 100%;
-    margin-top: 0;
-    height: 20rem;
+  /*========================
+              Top Section/Heading
+          ========================*/
+  .fa-bars {
+    display: block;
+    color: yellow;
+    font-size: 2rem;
+    position: absolute;
+    z-index: 2;
+    right: 10px;
+    top: 10px;
   }
+  .bgimg {
+    display: none;
+  }
+  .mobileimage {
+    display: block;
+    position: absolute;
+    width: 60%;
+    z-index: 0;
+    filter: brightness(20%);
+    margin: 10% 20%;
+  }
+  .ani3 {
+    letter-spacing: 1px;
+  }
+
+  .tit2 {
+    position: relative;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    left: 0;
+
+    padding: 0;
+
+    margin: 5rem auto 5rem;
+  }
+  body,
+  .body,
+  #bod,
+  .bod {
+    overflow: visible;
+  }
+
+  .tit,
+  .ani3 {
+    display: block;
+    font-size: 2rem;
+    margin: 0;
+  }
+  /*========================
+             Footer
+          ========================*/
   .bottomMenu {
     display: none;
     margin: 0;
@@ -893,9 +949,15 @@ i {
   .bar {
     display: none;
   }
+  /*========================
+             snowflakes
+          ========================*/
   .snowflakes {
     display: none;
   }
+  /*========================
+            Carosel
+          ========================*/
   .grafpic {
     height: 20rem;
     margin: auto auto;
@@ -921,15 +983,7 @@ i {
   .carousel span {
     font-size: 1rem;
   }
-  .fa-bars {
-    display: block;
-    color: red;
-    font-size: 2rem;
-    position: absolute;
-    z-index: 2;
-    right: 5px;
-    top: 0;
-  }
+
   .ulTop {
     flex-direction: column;
     position: absolute;
@@ -1007,7 +1061,7 @@ i {
   .caroselsection {
     position: relative;
   }
-  */ .btnpadd {
+  .btnpadd {
     position: relative;
   }
   .caroselsection span {
@@ -1017,9 +1071,6 @@ i {
   .next {
     left: -2px;
     letter-spacing: 5px;
-  }
-  .one {
-    display: none;
   }
 
   .rcon {
