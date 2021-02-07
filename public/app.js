@@ -104,10 +104,6 @@ left.addEventListener("click", function () {
     slide2.style.transform = "translate(0)";
     right.style.opacity = "1";
     currentslide = slide2;
-  } else if (currentslide === slide1) {
-    alert(
-      "CONGRATS! YOU FOUND MY BUG! Pain in the ass to add the extra code to make the buttons go from the first slide to the thrid slide and vica vera. Please message me directly telling me of the find."
-    );
   }
 });
 right.addEventListener("click", function () {

@@ -547,7 +547,11 @@ input {
   =======================*/
 .viddiv {
   text-align: center;
-  margin-top: 15rem;
+  margin: auto;
+  overflow: hidden;
+
+  border: solid red;
+  height: fit-content;
 }
 .streamline {
   width: 70%;
@@ -557,6 +561,11 @@ input {
   padding-bottom: 56.25%; /* 16:9 */
   position: relative;
   justify-content: center;
+}
+.another1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .ani2 {
@@ -591,11 +600,20 @@ input {
     background-position: 100%;
   }
 }
+.pops {
+  width: 100%;
+}
 iframe {
   position: absolute;
   left: 10%;
   width: 80%;
   height: 100%;
+}
+.testparent {
+  width: 100%;
+}
+.testparent2 {
+  width: 45%;
 }
 
 .watchbtn {
@@ -1031,6 +1049,11 @@ i {
   .dos {
     opacity: 0;
     margin: 0;
+  }
+  .another1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   /*========================
             Carosel
