@@ -1044,6 +1044,9 @@ i {
   .bar {
     display: none;
   }
+  .footer {
+    margin: 0 auto;
+  }
   /*========================
              snowflakes
           ========================*/
@@ -1101,16 +1104,10 @@ i {
     background-color: red;
   }
 
-  .caroselsection {
-    position: relative;
-  }
   .btnpadd {
     position: relative;
   }
-  .caroselsection span {
-    position: absolute;
-    top: 10px;
-  }
+
   .next {
     left: -2px;
     letter-spacing: 5px;
