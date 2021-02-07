@@ -1014,30 +1014,18 @@ i {
   /*========================
             Carosel
           ========================*/
-  .grafpic {
-    height: 100%;
-    margin: auto auto;
+  .inside .slide h1 {
+    font-size: 2.5rem;
   }
-  .carousel {
-    height: 20rem;
+  .inside .slide p {
+    font-size: 1.4rem;
+    width: 100%;
+    padding: 17px;
+    line-height: 25px;
+    letter-spacing: 2.3px;
   }
-  .carousel-item {
-    height: auto;
-  }
-  .carousel-item p {
-    font-size: 0.25rem;
-    margin: 0;
-  }
-  .carousel-item h2 {
-    font-size: 0.25rem;
-    margin: 0;
-  }
-  .picky {
-    margin: 0;
-    width: fit-content;
-  }
-  .carousel span {
-    font-size: 1rem;
+  .caroselImg {
+    width: 70%;
   }
 
   /*========================
