@@ -988,11 +988,24 @@ i {
     z-index: -1;
     left: -15px;
     width: 110%;
-    bottom: 95px;
+    bottom: 65px;
   }
 
   .real {
     position: relative;
+  }
+
+  /*========================
+          Video Section
+          ========================*/
+  .ani2 {
+    font-size: 2rem;
+  }
+  .viddiv {
+    margin: 0;
+  }
+  .watchbtn {
+    font-size: 1rem;
   }
 
   /*========================
