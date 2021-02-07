@@ -27,17 +27,19 @@
   margin-bottom: -45px;
   text-align: center;
   overflow: hidden;
+  filter: drop-shadow(8px 10px 5px #9c8d01);
 }
 .tit2 {
   position: absolute;
   left: 20%;
   top: 30%;
   overflow: hidden;
-  filter: drop-shadow(8px 10px 5px #9c8d01);
+
   max-width: 100%;
   font-size: 14rem;
 }
 .ani3 {
+  filter: drop-shadow(8px 10px 5px #9c8d01);
   color: rgba(156, 141, 1, 1);
   font-family: "coolregular";
   font-size: 6rem;
@@ -895,13 +897,14 @@ i {
   .bgimg {
     display: none;
   }
-  .mobileimage {
+  #mobileimage {
     display: block;
     position: absolute;
-    width: 60%;
-    z-index: 0;
+    width: 90%;
+    z-index: -1;
+
     filter: brightness(20%);
-    margin: 10% 20%;
+    margin: 100% 10%;
   }
   .ani3 {
     letter-spacing: 1px;
@@ -915,10 +918,9 @@ i {
     text-align: center;
     width: 100%;
     left: 0;
-
-    padding: 0;
-
-    margin: 5rem auto 5rem;
+    line-height: 80%;
+    height: 100vh;
+    padding-top: 7rem;
   }
   body,
   .body,
@@ -927,11 +929,15 @@ i {
     overflow: visible;
   }
 
-  .tit,
-  .ani3 {
+  .ani3,
+  .tit {
     display: block;
-    font-size: 2rem;
-    margin: 0;
+  }
+  .tit {
+    font-size: 4rem;
+  }
+  .ani3 {
+    font-size: 2.5rem;
   }
   /*========================
              Footer
