@@ -1008,7 +1008,36 @@ i {
     font-size: 1rem;
   }
   .dos {
-    margin: 0 auto;
+    opacity: 0;
+    margin: 0;
+  }
+  /*========================
+            Carosel
+          ========================*/
+  .grafpic {
+    height: 100%;
+    margin: auto auto;
+  }
+  .carousel {
+    height: 20rem;
+  }
+  .carousel-item {
+    height: auto;
+  }
+  .carousel-item p {
+    font-size: 0.25rem;
+    margin: 0;
+  }
+  .carousel-item h2 {
+    font-size: 0.25rem;
+    margin: 0;
+  }
+  .picky {
+    margin: 0;
+    width: fit-content;
+  }
+  .carousel span {
+    font-size: 1rem;
   }
 
   /*========================
@@ -1032,34 +1061,6 @@ i {
           ========================*/
   .snowflakes {
     display: none;
-  }
-  /*========================
-            Carosel
-          ========================*/
-  .grafpic {
-    height: 20rem;
-    margin: auto auto;
-  }
-  .carousel {
-    height: 20rem;
-  }
-  .carousel-item {
-    height: auto;
-  }
-  .carousel-item p {
-    font-size: 0.25rem;
-    margin: 0;
-  }
-  .carousel-item h2 {
-    font-size: 0.25rem;
-    margin: 0;
-  }
-  .picky {
-    margin: 0;
-    width: fit-content;
-  }
-  .carousel span {
-    font-size: 1rem;
   }
 
   .ulTop {
