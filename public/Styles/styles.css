@@ -1,3 +1,52 @@
+.square {
+  width: 80px;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.circle {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0%;
+  }
+  40% {
+    opacity: 20%;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 100%;
+  }
+}
+@keyframes color {
+  from {
+    background: #0f4c75;
+  }
+  to {
+    background: #3282b8;
+  }
+}
+
+.square {
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transition-timing-function: linear;
+}
+.circle {
+  animation-name: color;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transition-timing-function: linear;
+}
+.circle {
+  background: red;
+}
+
 /*========================
               Body and Global
           ========================*/
@@ -53,11 +102,11 @@
         to(#222),
         color-stop(0.5, #fff)
       ) 0 0 no-repeat;
-    -webkit-background-size: 450px;
+    -webkit-background-size: 250px;
     color: rgba(245, 221, 7, 0.5);
     -webkit-background-clip: text;
     -webkit-animation-name: shine;
-    -webkit-animation-duration: 2s;
+    -webkit-animation-duration: 3s;
     -webkit-animation-iteration-count: infinite;
   }
 }
@@ -574,6 +623,18 @@ input {
 
   height: fit-content;
 }
+.viddiv h1 {
+  font-size: 7rem;
+  width: 70%;
+
+  margin: auto;
+}
+.viddiv .ani2 {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
 .streamline {
   width: 70%;
 }
@@ -612,6 +673,9 @@ iframe {
 }
 .testparent2 {
   width: 45%;
+}
+.viddiv .ani2 span {
+  opacity: 0;
 }
 
 .watchbtn {

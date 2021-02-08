@@ -31,6 +31,20 @@
       ===========================  -->
 
   <body class="body">
+    <div class="square">
+	<div class="circle">
+	</div>
+	<div class="circle">
+	</div>
+</div>
+
+
+
+
+
+
+
+
     <i class="fas fa-bars"></i>
     <div class="begin">
       <p class="begintext">
@@ -170,7 +184,7 @@
       ===========================  -->
 
    <div class="viddiv" >
-        <h1 class="ani2 ani4">Latest Stream</h1>
+       <div class="ani2 ani4"><span>l</span> <h1>Latest Stream </h1> <span>l</span> </div> 
         <hr class="break streamline" />
         <div class="videoparentdiv">
           <div class="testparent">   
@@ -346,6 +360,14 @@
       <div class="snow1"></div>
       <div class="snow2"></div>
     </div>
-    <script src="app.js"></script>
+    <script src="app.js">
+      $(window).on("load", function{
+$(".square").fadeout("slow");
+})
+</script>
+
+
+
+
   </body>
 </html>
