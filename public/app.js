@@ -128,5 +128,3 @@ $(window).on("resize", function () {
     $(".tit").removeClass("ani4");
   }
 });
-const load = document.querySelector(".square");
-const circ = document.querySelector(".circle");
