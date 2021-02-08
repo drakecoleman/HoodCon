@@ -366,7 +366,7 @@ header {
   text-align: right;
 
   background-color: black;
-  z-index: 6;
+  z-index: 10000;
   position: absolute;
 
   transition: 1s;
@@ -438,22 +438,31 @@ header {
 .form {
   align-items: center;
   display: flex;
-
   flex-direction: column;
   font-family: Georgia, "Times New Roman", Times, serif;
-  padding-top: 6rem;
-  z-index: 4;
+  padding-top: 3rem;
+  z-index: 10;
   transition: 0.8s ease;
-  color: white;
 }
-.form p {
+.form form .ani {
   letter-spacing: 10px;
-  line-height: 5rem;
-  font-size: 3.5rem;
+  line-height: 3.5rem;
+  font-size: 2rem;
+  box-shadow: none;
+  filter: none;
+  background-color: black;
 }
 form {
+  align-items: center;
+  text-align: center;
   margin-top: 3rem;
   position: relative;
+  border: solid grey;
+  padding: 3% 5%;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 4px 2px gold;
+  border-width: 10px;
+  /* filter: drop-shadow(rgb(156, 141, 1) 8px 10px 5px); */
 }
 
 .img123 {
@@ -475,12 +484,16 @@ input {
   font-size: 2rem;
   padding: 5px;
   cursor: pointer;
+  margin: 1rem auto;
 }
 .send {
-  position: absolute;
-  right: -80%;
-  bottom: 0;
+  background-color: white;
+  color: black;
   cursor: pointer;
+}
+.send:hover {
+  background-color: black;
+  color: white;
 }
 /*=======================
        Top Icons
@@ -612,6 +625,13 @@ input {
 }
 .pops {
   width: 100%;
+  margin-bottom: 7rem;
+}
+.pops h1 {
+  letter-spacing: 17px;
+}
+.pops span {
+  opacity: 0;
 }
 iframe {
   position: absolute;
@@ -630,7 +650,7 @@ iframe {
 }
 
 .watchbtn {
-  margin-top: 2rem;
+  margin-top: 12rem;
   background-color: white;
   color: black;
   border-radius: 0.25rem;
@@ -655,6 +675,20 @@ iframe {
 /*=====================
       Carosel
 =====================*/
+.meet {
+  display: flex;
+  font-size: 5rem;
+  text-align: center;
+  width: 120%;
+
+  letter-spacing: 12px;
+}
+.meet h1 {
+  margin-left: 3%;
+}
+.meet span {
+  opacity: 0;
+}
 .tre {
   width: 90%;
 }
@@ -743,6 +777,60 @@ iframe {
   background-color: black;
 }
 
+.pheonix {
+  position: absolute;
+  left: 10%;
+  width: 50%;
+  height: 70%;
+}
+.pheo span {
+  opacity: 0;
+}
+.pheo h1 {
+  font-size: 7rem;
+  width: 70%;
+  letter-spacing: 15px;
+
+  margin: 10rem auto 0;
+}
+.pheo .ani2 {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.pheo .ani5 {
+  font-size: 2rem;
+  letter-spacing: 95px;
+  width: 100%;
+  text-align: center;
+  font-size: 8rem;
+  margin: 5rem auto 3rem;
+  letter-spacing: 5px;
+  filter: drop-shadow(0px 0px 20px #9c0101);
+
+  background: #222 -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#222),
+      to(#222),
+      color-stop(0.5, #fff)
+    ) 0 0 no-repeat;
+  -webkit-background-size: 250px;
+  color: rgba(245, 7, 7, 0.5);
+  -webkit-background-clip: text;
+  -webkit-animation-name: shine;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+}
+.dosmas {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 10rem;
+  border-color: gold;
+}
+
 /*============================
               Bottom/Footer
          ==========================*/
@@ -776,6 +864,9 @@ iframe {
 /*============================
               Social Media
  ==========================*/
+.footer {
+  margin-top: 5rem;
+}
 
 .fab {
   width: 100%;
