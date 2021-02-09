@@ -340,11 +340,11 @@
       to(#222),
       color-stop(0.5, #fff)
     ) 0 0 no-repeat;
-  -webkit-background-size: 130px;
+  -webkit-background-size: 190px;
   color: rgba(245, 221, 7, 0.6);
   -webkit-background-clip: text;
   -webkit-animation-name: shine2;
-  -webkit-animation-duration: 5s;
+  -webkit-animation-duration: 4s;
   -webkit-animation-iteration-count: infinite;
 }
 
@@ -360,6 +360,9 @@
   filter: drop-shadow(0px 0px 20px #9c8d01);
 }
 .ani3 {
+  filter: drop-shadow(20px 20px 20px #9c8d01);
+  color: rgba(124, 112, 0, 0.5);
+  -webkit-animation-duration: 3s;
   -webkit-background-size: 245px;
 }
 
@@ -377,10 +380,11 @@
   width: 100%;
 }
 .conservative {
-  color: rgba(156, 141, 1, 1);
+  color: rgb(80, 72, 0);
   font-family: "coolregular";
   font-size: 6rem;
   letter-spacing: 25px;
+  filter: brightness(130%);
 }
 /*======================
                 Top/Header for Index
@@ -866,20 +870,25 @@ iframe {
 
 .pheonix {
   position: absolute;
-  left: 10%;
-  width: 50%;
-  height: 70%;
 }
-.pheo span {
-  opacity: 0;
+.pheo .pain {
+  width: 70%;
+  height: 10%;
 }
-.pheo :nth-child(1) {
-  font-size: 7rem;
-  width: 80%;
-  margin: 10rem auto 2rem;
-
-  overflow: hidden;
-  justify-content: center;
+.pheo .subtext {
+  width: 30%;
+  font-size: 2.5rem;
+  font-family: "coolregular";
+  line-height: 4rem;
+}
+.pheo .subtext h3 {
+  font-family: "coolregular";
+  text-align: center;
+  margin: auto auto auto -2rem;
+  padding: 5px;
+}
+.pheodiv .subtext img {
+  width: 85%;
 }
 
 .pheo h1 {
@@ -889,6 +898,11 @@ iframe {
   margin: 5rem auto 3rem;
   letter-spacing: 15px;
   /* filter: drop-shadow(0px 0px 20px #9c0101); */
+}
+.pheodiv {
+  color: white;
+
+  display: flex;
 }
 .dosmas {
   width: 70%;
@@ -1207,9 +1221,7 @@ i {
   /*========================
           Video Section
           ========================*/
-  .ani2 {
-    font-size: 2rem;
-  }
+
   .viddiv {
     margin: 0;
   }
