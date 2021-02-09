@@ -454,13 +454,13 @@ header {
   height: 0;
   bottom: 0;
   left: 0;
-  background-color: rgb(156, 141, 1);
+  background-color: white;
   visibility: hidden;
   transition: all 0.3s ease-in-out;
 }
 .ulTop li:hover > .ani:before {
   visibility: visible;
-  height: 5px;
+  height: 2px;
 }
 .mer {
   letter-spacing: 8px;
