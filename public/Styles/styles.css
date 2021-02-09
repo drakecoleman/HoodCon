@@ -359,13 +359,16 @@
 }
 .ani2 {
   text-align: center;
-  filter: drop-shadow(0px 0px 20px #9c8d01);
+ 
 }
 .ani3 {
   filter: drop-shadow(20px 20px 20px #9c8d01);
   color: rgba(124, 112, 0, 0.5);
   -webkit-animation-duration: 4s;
   -webkit-background-size: 245px;
+}
+.ani4 {
+  -webkit-background-size: 300px 720px;
 }
 
 /*=================================================
@@ -375,7 +378,7 @@
   position: absolute;
   letter-spacing: 15px;
   top: 40%;
-  z-index: 3;
+  z-index: 1;
   font-size: 9.5rem;
   margin: auto auto;
   text-align: center;
@@ -397,7 +400,7 @@
   width: 100%;
   background-color: rgba(255, 255, 255, 255, 0.1);
   z-index: 1;
-  backdrop-filter: invert(0.7);
+  backdrop-filter: invert(0.4);
 }
 .mobileimage {
   display: none;
@@ -406,7 +409,6 @@
   width: 100%;
   margin: 0;
   /* filter: brightness(60%); */
-  backdrop-filter: invert(0.8);
 }
 header {
   /* position: absolute; */
@@ -450,17 +452,18 @@ header {
 .ulTop li a:before {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 1%;
   height: 0;
   bottom: 0;
-  left: 0;
+  left: 10px;
   background-color: white;
   visibility: hidden;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .ulTop li:hover > .ani:before {
   visibility: visible;
   height: 2px;
+  width: 80%;
 }
 .mer {
   letter-spacing: 8px;
@@ -903,14 +906,42 @@ iframe {
 .pheodiv .subtext img {
   width: 85%;
 }
-
-.pheo h1 {
-  width: 100%;
-  text-align: center;
-  font-size: 8rem;
-  margin: 5rem auto 3rem;
+.pheo h1{
+    width: 100%;
+  text-align: left;
+ margin: 5rem auto 3rem;
   letter-spacing: 15px;
   /* filter: drop-shadow(0px 0px 20px #9c0101); */
+  height: fit-content;
+}
+
+.pheo .ani4 {
+    font-family: "Josefin Sans", sans-serif;
+  line-height: 8rem;
+   font-size: 3rem;
+  }
+  .pheo .ani5{
+    text-align: center;
+    font-size: 6rem;
+    line-height: 10rem;
+    letter-spacing: 15px;
+  }
+.headdiv {
+  padding: 3%;
+}
+.line2 {
+  margin-left: 25rem;
+}
+.line3 {
+  font-family: "Josefin Sans", sans-serif;
+  margin-left: 20rem;
+}
+.line4 {
+  font-family: "Josefin Sans", sans-serif;
+  margin-left: 35rem;
+}
+.pheo .ani5{
+  tex
 }
 .pheodiv {
   color: white;
