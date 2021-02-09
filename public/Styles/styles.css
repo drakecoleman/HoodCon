@@ -20,7 +20,7 @@
   -webkit-text-fill-color: transparent; 
   
   */
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 481px) {
   .ani {
     background: #222 -webkit-gradient(
         linear,
@@ -59,6 +59,86 @@
     -webkit-animation-name: shine;
     -webkit-animation-duration: 3s;
     -webkit-animation-iteration-count: infinite;
+  }
+  @-webkit-keyframes shine2 {
+    0%,
+    10% {
+      background-position: -1000px;
+    }
+    20% {
+      background-position: top left;
+    }
+    90% {
+      background-position: top right;
+    }
+    100% {
+      background-position: 5000px;
+    }
+  }
+  .ulTop a:hover {
+    -webkit-animation: neon3 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon3 1.5s ease-in-out infinite alternate;
+    animation: neon3 1.5s ease-in-out infinite alternate;
+    color: #ffffff;
+  }
+
+  @-webkit-keyframes neon3 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ffdd1b,
+        0 0 70px #ffdd1b, 0 0 80px #ffdd1b, 0 0 100px #ffdd1b, 0 0 150px #ffdd1b;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffdd1b,
+        0 0 35px #ffdd1b, 0 0 40px #ffdd1b, 0 0 50px #ffdd1b, 0 0 75px #ffdd1b;
+    }
+  }
+
+  @-moz-keyframes neon3 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ffdd1b,
+        0 0 70px #ffdd1b, 0 0 80px #ffdd1b, 0 0 100px #ffdd1b, 0 0 150px #ffdd1b;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffdd1b,
+        0 0 35px #ffdd1b, 0 0 40px #ffdd1b, 0 0 50px #ffdd1b, 0 0 75px #ffdd1b;
+    }
+  }
+
+  /*glow*/
+
+  @keyframes neon3 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ffdd1b,
+        0 0 70px #ffdd1b, 0 0 80px #ffdd1b, 0 0 100px #ffdd1b, 0 0 150px #ffdd1b;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffdd1b,
+        0 0 35px #ffdd1b, 0 0 40px #ffdd1b, 0 0 50px #ffdd1b, 0 0 75px #ffdd1b;
+    }
+  }
+  .ani5 {
+    color: #fff;
+
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+  }
+
+  .ani5:hover {
+    color: #ff1177;
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+  }
+  @-webkit-keyframes neon1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff1177,
+        0 0 70px #ff1177, 0 0 80px #ff1177, 0 0 100px #ff1177, 0 0 150px #ff1177;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff1177,
+        0 0 35px #ff1177, 0 0 40px #ff1177, 0 0 50px #ff1177, 0 0 75px #ff1177;
+    }
   }
 }
 .form {
@@ -293,7 +373,7 @@ header {
   width: 100%;
   margin-top: 25px;
   position: fixed;
-  z-index: 5;
+  z-index: 1;
 }
 
 @-webkit-keyframes shine {
@@ -356,6 +436,9 @@ header {
   visibility: visible;
   height: 5px;
 }
+.mer {
+  letter-spacing: 8px;
+}
 /*===========================================
        Follow Me/With a little bit of the form
   ===========================================*/
@@ -366,7 +449,7 @@ header {
   text-align: right;
 
   background-color: black;
-  z-index: 10000;
+  z-index: 2;
   position: absolute;
 
   transition: 1s;
@@ -500,10 +583,10 @@ input {
   =======================*/
 .iconImgDiv {
   position: relative;
-  z-index: 7;
+  z-index: 2;
 }
 .iconsTop {
-  z-index: 3;
+  z-index: 2;
   align-items: center;
   width: 100%;
   position: absolute;
@@ -807,22 +890,7 @@ iframe {
   font-size: 8rem;
   margin: 5rem auto 3rem;
   letter-spacing: 5px;
-  filter: drop-shadow(0px 0px 20px #9c0101);
-
-  background: #222 -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(#222),
-      to(#222),
-      color-stop(0.5, #fff)
-    ) 0 0 no-repeat;
-  -webkit-background-size: 250px;
-  color: rgba(245, 7, 7, 0.5);
-  -webkit-background-clip: text;
-  -webkit-animation-name: shine;
-  -webkit-animation-duration: 3s;
-  -webkit-animation-iteration-count: infinite;
+  /* filter: drop-shadow(0px 0px 20px #9c0101); */
 }
 .dosmas {
   width: 70%;
@@ -1085,7 +1153,7 @@ i {
     -webkit-background-size: 100px;
     color: rgba(156, 141, 1, 0.5);
     -webkit-background-clip: text;
-    -webkit-animation-name: shine;
+    -webkit-animation-name: shine2;
     -webkit-animation-duration: 2.5s;
     -webkit-animation-iteration-count: infinite;
     /* text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5); */
