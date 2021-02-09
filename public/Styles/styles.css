@@ -64,9 +64,11 @@
   }
 
   .ani5 {
-    color: #ff1177;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff1177,
-      0 0 35px #ff1177, 0 0 40px #ff1177, 0 0 50px #ff1177, 0 0 75px #ff1177;
+    color: rgb(255, 7, 58);
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff,
+      0 0 20px rgb(255, 7, 58), 0 0 35px rgb(255, 7, 58),
+      0 0 40px rgb(255, 7, 58), 0 0 50px rgb(255, 7, 58),
+      0 0 75px rgb(255, 7, 58);
   }
   /* 
   Neon Animation. Really Cool, but uneeded and actually slows down scrolling?
@@ -340,11 +342,11 @@
       to(#222),
       color-stop(0.5, #fff)
     ) 0 0 no-repeat;
-  -webkit-background-size: 190px;
+  -webkit-background-size: 220px;
   color: rgba(245, 221, 7, 0.6);
   -webkit-background-clip: text;
   -webkit-animation-name: shine2;
-  -webkit-animation-duration: 4s;
+  -webkit-animation-duration: 3.4s;
   -webkit-animation-iteration-count: infinite;
 }
 
@@ -362,7 +364,7 @@
 .ani3 {
   filter: drop-shadow(20px 20px 20px #9c8d01);
   color: rgba(124, 112, 0, 0.5);
-  -webkit-animation-duration: 3s;
+  -webkit-animation-duration: 4s;
   -webkit-background-size: 245px;
 }
 
@@ -886,6 +888,7 @@ iframe {
   text-align: center;
   margin: auto auto auto -2rem;
   padding: 5px;
+  text-decoration: underline;
 }
 .pheodiv .subtext img {
   width: 85%;
