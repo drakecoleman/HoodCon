@@ -1215,7 +1215,7 @@ i {
   .fa-bars {
     display: block;
     color: yellow;
-    font-size: 2vw;
+    font-size: 8vw;
     position: absolute;
     z-index: 2;
     right: 10px;
@@ -1288,59 +1288,47 @@ i {
             Middle/Body Heading Text
           ========================*/
   .bodytitle p {
-    margin-bottom: 30px;
+    margin-bottom: 4vw;
     width: 100%;
-    letter-spacing: 5px;
+    letter-spacing: 1vw;
     color: white;
-    font-size: 2vw;
+    font-size: 6vw;
 
-    line-height: 4vw;
+    line-height: 16vw;
+    padding: 1vw;
   }
-  .bodytitle p span {
-    font-size: 2vw;
-    line-height: 4vw;
-  }
-  .goto {
-    font-size: 1vw;
+
+  .bodytitle .goto {
+    font-size: 7vw;
     color: yellow;
   }
-  .first {
-    color: grey;
+  .bodytitle .first {
+    font-size: 10vw;
   }
   .bodytitle h3 {
     font-size: 2vw;
     font-weight: bolder;
   }
   .bodytitle p .hoodspan {
-    line-height: 9vw;
-    font-size: 5vw;
+    font-size: 12vw;
   }
   .test {
     display: none;
-  }
-  .test2img {
-    display: block;
-    position: absolute;
-    filter: brightness(30%);
-    z-index: -1;
-    left: -15px;
-    width: 110%;
-    bottom: 65px;
-  }
-
-  .real {
-    position: relative;
   }
 
   /*========================
           Video Section
           ========================*/
+  .viddiv .latest {
+    margin-top: 25vw;
+  }
 
   .viddiv {
     margin: 0;
   }
   .watchbtn {
-    font-size: 1vw;
+    margin: 1vw auto 30vw;
+    font-size: 5vw;
   }
   .dos {
     opacity: 0;
@@ -1365,11 +1353,41 @@ i {
     font-size: 1.4vw;
     width: 100%;
     padding: 15px;
-    line-height: 25px;
+    line-height: 2.5vw;
     letter-spacing: 2.3px;
   }
   .caroselImg {
-    width: 70%;
+    width: 20%;
+  }
+  /*========================
+            Pheonix
+  ========================*/
+  .pheo .headdiv h1 {
+    font-size: 6vw;
+    line-height: 10vw;
+    text-align: center;
+  }
+  .pheo .headdiv .line2,
+  .line3,
+  .line4 {
+    text-align: center;
+    margin: 0;
+  }
+  .pheo .ani5 {
+    letter-spacing: 1vw;
+    padding: 0.3vw;
+    color: rgb(255, 7, 58);
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff,
+      0 0 20px rgb(255, 7, 58), 0 0 35px rgb(255, 7, 58),
+      0 0 40px rgb(255, 7, 58), 0 0 50px rgb(255, 7, 58),
+      0 0 75px rgb(255, 7, 58);
+    margin-top: 20vw;
+  }
+  .playstorediv {
+    margin: auto;
+  }
+  .dosmas {
+    display: none;
   }
 
   /*========================
@@ -1378,18 +1396,26 @@ i {
   .bottomMenu {
     display: none;
     margin: 0;
+    padding: 0;
   }
   .iconsBot {
     width: 100%;
-    margin: 0 auto 60px;
+    margin: 0 auto;
     align-items: center;
     text-align: center;
+  }
+  .dove a i {
+    font-size: 7vw;
+  }
+  .fa-facebook::before {
+    font-size: 7vw;
   }
   .bar {
     display: none;
   }
   .footer {
-    margin: 0 auto;
+    margin: 5vw auto 7vw;
+    padding: 4vw auto 0;
   }
   .drakelink {
     font-size: 0.5vw;
