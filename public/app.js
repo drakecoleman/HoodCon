@@ -62,7 +62,7 @@ follow.addEventListener("click", () => {
 
 ex2.addEventListener("click", () => {
   form.style.width = "0";
-  form.style.right = "1000%";
+  form.style.right = "-1000%";
   body.style.overflow = "visible";
 });
 contact.addEventListener("click", () => {
@@ -119,12 +119,12 @@ right.addEventListener("click", function () {
     currentslide = slide3;
   }
 });
-$(window).on("resize", function () {
-  if ($(window).width() < 480) {
-    $(".tit").addClass("ani4");
-    $(".tit").removeClass("ani");
-  } else {
-    $(".tit").addClass("ani");
-    $(".tit").removeClass("ani4");
-  }
-});
+// $(window).on("resize", function () {
+//   if ($(window).width() < 480) {
+//     $(".tit").addClass("ani4");
+//     $(".tit").removeClass("ani");
+//   } else {
+//     $(".tit").addClass("ani");
+//     $(".tit").removeClass("ani4");
+//   }
+// });
