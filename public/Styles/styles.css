@@ -1209,6 +1209,9 @@ i {
   /*========================
               Top Section/Heading
           ========================*/
+  .fix {
+    display: none;
+  }
   .fa-bars {
     display: block;
     color: yellow;
@@ -1218,9 +1221,11 @@ i {
     right: 10px;
     top: 10px;
   }
-  .bgimg {
-    display: none;
+  .mainheading {
+    border: solid red;
+    line-height: 8vw;
   }
+
   #mobileimage {
     display: block;
     position: absolute;
@@ -1231,11 +1236,13 @@ i {
     filter: brightness(20%);
     margin: 70% 10%;
   }
-  .ani3 {
-    letter-spacing: 1px;
-  }
+
   .ani2 {
     overflow: hidden;
+  }
+  .ani3 {
+    font-size: 5vw;
+    letter-spacing: 3vw;
   }
 
   .tit2 {
@@ -1246,10 +1253,10 @@ i {
     text-align: center;
     width: 100%;
     left: 0;
-    line-height: 60%;
     height: 100vh;
     padding-top: 8vw;
     overflow: hidden;
+    display: block;
   }
   body,
   .body,
@@ -1258,16 +1265,11 @@ i {
     overflow: visible;
   }
 
-  .ani3,
-  .tit {
-    display: block;
+  .conservative {
+    font-size: 3vw;
+    letter-spacing: 3vw;
   }
-  .tit {
-    font-size: 4vw;
-  }
-  .ani3 {
-    font-size: 2.5vw;
-  }
+
   .ani4 {
     background: #222 -webkit-gradient(
         linear,
