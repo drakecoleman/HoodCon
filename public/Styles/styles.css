@@ -1221,9 +1221,22 @@ i {
     right: 10px;
     top: 10px;
   }
-  .mainheading {
-    border: solid red;
-    line-height: 8vw;
+  .tit2 {
+    position: relative;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    height: 100vh;
+
+    overflow: hidden;
+    display: block;
+  }
+  .body .mainheading {
+    line-height: 17vw;
+    top: 37vw;
   }
 
   #mobileimage {
@@ -1234,40 +1247,24 @@ i {
     overflow: hidden;
 
     filter: brightness(20%);
-    margin: 70% 10%;
+    margin: 100% 10%;
   }
 
-  .ani2 {
-    overflow: hidden;
-  }
   .ani3 {
+    font-size: 8vw;
+    letter-spacing: 3vw;
+    filter: drop-shadow(1vw 1vw 1vw #9c8d01);
+  }
+  .conservative {
     font-size: 5vw;
     letter-spacing: 3vw;
   }
 
-  .tit2 {
-    position: relative;
-    display: block;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    left: 0;
-    height: 100vh;
-    padding-top: 8vw;
-    overflow: hidden;
-    display: block;
-  }
   body,
   .body,
   #bod,
   .bod {
     overflow: visible;
-  }
-
-  .conservative {
-    font-size: 3vw;
-    letter-spacing: 3vw;
   }
 
   .ani4 {
