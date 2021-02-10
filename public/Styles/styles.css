@@ -1236,7 +1236,7 @@ i {
   }
   .body .mainheading {
     line-height: 17vw;
-    top: 37vw;
+    top: 45vw;
   }
 
   #mobileimage {
@@ -1251,13 +1251,14 @@ i {
   }
 
   .ani3 {
-    font-size: 8vw;
+    font-size: 14vw;
     letter-spacing: 3vw;
     filter: drop-shadow(1vw 1vw 1vw #9c8d01);
   }
   .conservative {
     font-size: 5vw;
     letter-spacing: 3vw;
+    font-family: "coolregular";
   }
 
   body,
@@ -1419,7 +1420,7 @@ i {
   }
   .drakelink {
     margin-bottom: 8vw;
-    font-size: 0.5vw;
+    font-size: 2vw;
   }
   /*========================
              snowflakes
