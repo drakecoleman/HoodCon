@@ -690,6 +690,9 @@ input {
 .test2img {
   display: none;
 }
+.bodytitle {
+  border: solid rgb(156, 141, 1);
+}
 
 .bodytitle,
 .bodytitle span {
@@ -750,9 +753,18 @@ input {
   justify-content: center;
   margin: auto;
   overflow: visible;
-  margin-top: 10%;
+  margin: 10% auto;
   letter-spacing: 15px;
   padding: 3%;
+  border: double;
+  border-color: #fdb813;
+  transition: 1s;
+}
+.viddiv .latest {
+  box-shadow: 20px 20px rgba(255, 255, 255, 0.15);
+}
+.viddiv .latest:hover {
+  box-shadow: 15px 15px rgb(129, 128, 128);
 }
 
 .streamline {
@@ -772,12 +784,21 @@ input {
 
 .viddiv .pops {
   width: 75%;
-  margin: 7vw auto 0;
+  margin: 7vw auto;
   letter-spacing: 12px;
   font-size: 7vw;
   text-align: center;
   justify-content: center;
   align-items: center;
+  box-shadow: 20px 20px rgba(255, 255, 255, 0.15);
+  transition: 1s;
+  border: double;
+  border-color: #fdb813;
+  padding: 1%;
+}
+
+.viddiv .pops:hover {
+  box-shadow: 15px 15px rgb(129, 128, 128);
 }
 .viddiv .break {
   width: 57%;
@@ -832,9 +853,19 @@ iframe {
   display: flex;
   font-size: 6vw;
   text-align: center;
-
+  margin: 0 auto 5vw;
   justify-content: center;
   letter-spacing: 12px;
+  transition: 1s;
+  border: double;
+  border-color: #fdb813;
+  width: 80%;
+  box-shadow: 20px 20px rgba(255, 255, 255, 0.15);
+  padding: 1%;
+}
+
+.meet:hover {
+  box-shadow: 15px 15px rgb(129, 128, 128);
 }
 
 .tre {
@@ -1003,6 +1034,12 @@ iframe {
   width: 50%;
   display: flex;
   justify-content: space-evenly;
+  margin: 5vw auto;
+}
+.playstorediv p {
+  color: red;
+  width: 50%;
+  text-align: center;
 }
 .apple {
   color: black;
@@ -1322,6 +1359,7 @@ i {
           ========================*/
   .viddiv .latest {
     margin-top: 25vw;
+    border: solid red;
   }
 
   .viddiv {
