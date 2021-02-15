@@ -507,7 +507,7 @@ header {
   ===========================================*/
 .followme,
 .form {
-  height: 800px;
+  height: 100vw;
   text-align: right;
   background-color: white;
   overflow: hidden;
