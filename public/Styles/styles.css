@@ -199,7 +199,7 @@ html {
 }
 
 #favor {
-  transform: translate(-1600px, 400px);
+  transform: translate(-2000px, 400px);
   animation: favorite 8s;
   animation-delay: 1.2s;
   font-size: 10vw;
@@ -426,7 +426,7 @@ html {
   height: 100%;
   position: absolute;
 
-  background-image: url(/public/hoodbackground.png);
+  background-image: url(/hoodbackground.png);
   background-size: cover;
 }
 .module-inside {
