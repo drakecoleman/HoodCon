@@ -516,6 +516,9 @@ header {
   transition: 1.1s;
   position: absolute;
 }
+.followYoutube {
+  display: none;
+}
 .followme {
   z-index: 2;
 }
@@ -1281,7 +1284,7 @@ i {
               Top Section/Heading
           ========================*/
   .blur {
-    filter: blur(4px);
+    filter: blur(2px);
   }
   .fix {
     display: none;
@@ -1359,6 +1362,104 @@ i {
     -webkit-animation-iteration-count: infinite;
     /* text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5); */
   }
+  .ulTop {
+    flex-direction: column;
+    position: absolute;
+
+    display: block;
+    margin-left: 1px;
+    z-index: 2;
+    margin-top: 35%;
+    margin-left: 30%;
+    padding: 5.5px;
+    transform: translate(-300%);
+    transition: 0.7s;
+    height: 100%;
+  }
+  .ulTop li {
+    text-align: center;
+    background-color: black;
+    padding: 0.8px;
+  }
+  .ulTop li a {
+    position: relative;
+    display: block;
+    font-size: 10vw;
+    border: grey solid;
+    padding: 10px auto auto;
+    margin-top: 10px;
+    color: yellow;
+    background-color: black;
+  }
+  .iconsTop {
+    display: none;
+  }
+  .bod {
+    padding: 0;
+  }
+  .body {
+    padding: 0;
+  }
+  .tog {
+    transform: translate(0);
+  }
+  .fa-bars {
+    transform: rotate(0);
+  }
+  .relative {
+    position: relative;
+    z-index: 1000000000;
+    background-color: red;
+  }
+
+  .btnpadd {
+    position: relative;
+  }
+
+  .next {
+    left: -2px;
+    letter-spacing: 5px;
+  }
+
+  .rcon {
+    left: 50px;
+  }
+  .prev {
+    right: -65px;
+    letter-spacing: 5px;
+  }
+  .pcon {
+    right: 50px;
+  }
+  /*========================
+            Follow Me/VIP Tab
+          ========================*/
+  .followme,
+  .form {
+    height: 100%;
+  }
+  .followme .followp1 {
+    margin: 35vw auto;
+    font-size: 5vw;
+    line-height: 14vw;
+    padding: 2%;
+  }
+  .followp2 {
+    display: none;
+  }
+  .followYoutube {
+    display: block;
+    font-size: 35vw;
+    text-align: center;
+  }
+  .fas1,
+  .fas2 {
+    font-size: 9vw;
+  }
+  .form form {
+    margin-top: 45vw;
+  }
+
   /*========================
             Middle/Body Heading Text
           ========================*/
@@ -1508,86 +1609,13 @@ i {
     margin-bottom: 8vw;
     font-size: 2vw;
   }
-  /*========================
-             snowflakes
-          ========================*/
-  .snowflakes {
-    display: none;
-  }
-
-  .ulTop {
-    flex-direction: column;
-    position: absolute;
-
-    display: block;
-    margin-left: 1px;
-    z-index: 2;
-    top: 5px;
-    padding: 5.5px;
-    transform: translate(-100%);
-    transition: 0.5s;
-    height: 100%;
-  }
-  .ulTop li {
-    text-align: center;
-    display: block;
-    width: 100%;
-    padding: 0.8px;
-  }
-  .ulTop li a {
-    position: relative;
-    display: block;
-    font-size: 1.9vw;
-    border: grey solid;
-    padding: 10px auto auto;
-    margin-top: 10px;
-    color: yellow;
-    background-color: black;
-  }
-  .iconsTop {
-    display: none;
-  }
-  .bod {
-    padding: 0;
-  }
-  .body {
-    padding: 0;
-  }
-  .tog {
-    transform: translate(0);
-  }
-  .fa-bars {
-    transform: rotate(0);
-  }
-  .relative {
-    position: relative;
-    z-index: 1000000000;
-    background-color: red;
-  }
-
-  .btnpadd {
-    position: relative;
-  }
-
-  .next {
-    left: -2px;
-    letter-spacing: 5px;
-  }
-
-  .rcon {
-    left: 50px;
-  }
-  .prev {
-    right: -65px;
-    letter-spacing: 5px;
-  }
-  .pcon {
-    right: 50px;
-  }
 }
-/*=======================
-                Snow
-          =======================*/
+/*=============================================================================
+                                Snowflakes
+=============================================================================*/
+.snowflakes {
+  display: none;
+}
 
 .snowflake {
   color: #fff;

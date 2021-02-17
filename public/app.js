@@ -11,6 +11,7 @@ let slide1 = document.querySelector(".slide1");
 let slide2 = document.querySelector(".slide2");
 let slide3 = document.querySelector(".slide3");
 let follow = document.querySelector(".follow");
+let follow2 = document.querySelector(".fol");
 let board = document.querySelector(".followme");
 let ex1 = document.querySelector(".fas1");
 let youtube = document.querySelector(".you");
@@ -23,6 +24,8 @@ let form = document.querySelector(".form");
 let ex2 = document.querySelector(".fas2");
 let hood = document.querySelector(".tit");
 let mainheading = document.querySelector(".tit2");
+let mobLinks = document.querySelectorAll(".mobLink");
+let youtube2 = document.querySelector(".followYoutube");
 let currentslide = slide1;
 let takeaway = () => {
   face.classList.remove("ico");
@@ -91,6 +94,17 @@ bar.addEventListener("click", () => {
   ul.classList.toggle("tog");
   mainheading.classList.toggle("blur");
 });
+mobLinks.forEach((item) => {
+  item.addEventListener("click", () => {
+    if (item === follow2) {
+      youtube2.classList.toggle("youtubeMobile");
+    }
+    // ul.style.transform = "translate(-200%)";
+    ul.classList.toggle("tog");
+    mainheading.classList.toggle("blur");
+  });
+});
+
 mobile();
 
 left.addEventListener("click", function () {
