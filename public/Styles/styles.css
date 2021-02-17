@@ -1280,6 +1280,9 @@ i {
   /*========================
               Top Section/Heading
           ========================*/
+  .blur {
+    filter: blur(4px);
+  }
   .fix {
     display: none;
   }

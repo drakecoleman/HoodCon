@@ -22,7 +22,7 @@ let contact = document.querySelector(".contact");
 let form = document.querySelector(".form");
 let ex2 = document.querySelector(".fas2");
 let hood = document.querySelector(".tit");
-
+let mainheading = document.querySelector(".tit2");
 let currentslide = slide1;
 let takeaway = () => {
   face.classList.remove("ico");
@@ -89,6 +89,7 @@ let mobile = function () {
 };
 bar.addEventListener("click", () => {
   ul.classList.toggle("tog");
+  mainheading.classList.toggle("blur");
 });
 mobile();
 
