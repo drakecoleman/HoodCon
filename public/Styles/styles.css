@@ -1457,7 +1457,19 @@ i {
     font-size: 9vw;
   }
   .form form {
-    margin-top: 45vw;
+    margin-top: 35vw;
+    font-size: 15vw;
+
+    padding: 4%;
+    line-height: 15vw;
+  }
+  .form form .ani {
+    line-height: 10vw;
+    font-size: 5vw;
+  }
+  .form form input {
+    padding: 3%;
+    width: 100%;
   }
 
   /*========================
