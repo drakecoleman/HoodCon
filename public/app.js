@@ -119,12 +119,3 @@ right.addEventListener("click", function () {
     currentslide = slide3;
   }
 });
-// $(window).on("resize", function () {
-//   if ($(window).width() < 480) {
-//     $(".tit").addClass("ani4");
-//     $(".tit").removeClass("ani");
-//   } else {
-//     $(".tit").addClass("ani");
-//     $(".tit").removeClass("ani4");
-//   }
-// });
