@@ -426,7 +426,7 @@ html {
   height: 100%;
   position: absolute;
 
-  background-image: url(images/hoodbackground.png);
+  background-image: url(hoodbackground.png);
   background-size: cover;
 }
 .module-inside {
