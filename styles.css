@@ -132,15 +132,15 @@ html {
 --------------------------*/
 @font-face {
   font-family: "a_attack_graffitiregular";
-  src: url("aattackgraffiti-webfont.woff2") format("woff2"),
-    url("aattackgraffiti-webfont.woff") format("woff");
+  src: url("Styles/aattackgraffiti-webfont.woff2") format("woff2"),
+    url("Styles/aattackgraffiti-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "coolregular";
-  src: url("dastreets-8lmz-webfont.woff2") format("woff2"),
-    url("dastreets-8lmz-webfont.woff") format("woff");
+  src: url("Styles/dastreets-8lmz-webfont.woff2") format("woff2"),
+    url("Styles/dastreets-8lmz-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
