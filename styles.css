@@ -572,6 +572,95 @@ header {
   font-size: 15.5vw;
   transform: translate(-30vw, -25vw);
 }
+@media only screen and (max-width: 1600px) {
+  .yu .youtuber {
+    transform: translate(-30vw, -30vw);
+  }
+}
+@media only screen and (max-width: 1450px) {
+  .yu .youtuber {
+    transform: translate(-30vw, -36vw);
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .yu .youtuber {
+    transform: translate(-20vw, -33vw);
+  }
+  .body .iconsTop {
+    transform: translate(-10%, -70%);
+  }
+  .body .iconsTop .three .insty,
+  .body .iconsTop .two .twit,
+  .body .iconsTop .feces::before {
+    font-size: 8vw;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .yu .youtuber {
+    transform: translate(-20vw, -33vw);
+  }
+  .body .iconsTop {
+    transform: translate(-10%, -150%);
+  }
+  .body .iconsTop .three .insty,
+  .body .iconsTop .two .twit,
+  .body .iconsTop .feces::before {
+    font-size: 8vw;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .yu .youtuber {
+    transform: translate(-20vw, -33vw);
+  }
+  .body .iconsTop {
+    transform: translate(-10%, -200%);
+  }
+  .body .iconsTop .three .insty,
+  .body .iconsTop .two .twit,
+  .body .iconsTop .feces::before {
+    font-size: 8vw;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .yu .youtuber {
+    transform: translate(-20vw, -33vw);
+  }
+  .body .iconsTop {
+    transform: translate(-10%, -300%);
+  }
+  .body .iconsTop .three .insty,
+  .body .iconsTop .two .twit,
+  .body .iconsTop .feces::before {
+    font-size: 8vw;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .yu .youtuber {
+    transform: translate(-20vw, -33vw);
+  }
+  .body .iconsTop {
+    transform: translate(-10%, -400%);
+  }
+  .body .iconsTop .three .insty,
+  .body .iconsTop .two .twit,
+  .body .iconsTop .feces::before {
+    font-size: 8vw;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .yu .youtuber {
+    transform: translate(-20vw, -33vw);
+  }
+  .body .iconsTop {
+    transform: translate(-10%, -500%);
+  }
+  .body .iconsTop .three .insty,
+  .body .iconsTop .two .twit,
+  .body .iconsTop .feces::before {
+    font-size: 8vw;
+  }
+}
+
 .three .insty {
   font-size: 4vw;
   transform: translate(400%);
@@ -1625,13 +1714,13 @@ i {
     margin-bottom: 8vw;
     font-size: 2vw;
   }
+  .snowflakes {
+    display: none;
+  }
 }
 /*=============================================================================
                                 Snowflakes
 =============================================================================*/
-.snowflakes {
-  display: none;
-}
 
 .snowflake {
   color: #fff;
