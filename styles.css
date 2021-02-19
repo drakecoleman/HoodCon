@@ -586,6 +586,10 @@ header {
 .dipshit {
   transform: translate(300%);
 }
+.followYoutube {
+  display: none;
+}
+
 /*===========================================
       Contact form
   ===========================================*/
