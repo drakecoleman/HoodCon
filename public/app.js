@@ -26,7 +26,15 @@ let hood = document.querySelector(".tit");
 let mainheading = document.querySelector(".tit2");
 let mobLinks = document.querySelectorAll(".mobLink");
 let youtube2 = document.querySelector(".followYoutube");
+let header = document.querySelector("header");
 let currentslide = slide1;
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset >= 60) {
+    header.style.background = "rgba(0,0,0,.85";
+  } else if (window.pageYOffset <= 59) {
+    header.style.background = "rgba(0,0,0,0";
+  }
+});
 let takeaway = () => {
   face.classList.remove("ico");
   face.classList.add("feces");

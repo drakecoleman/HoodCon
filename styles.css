@@ -445,10 +445,10 @@ html {
 }
 
 header {
-  /* position: absolute; */
+  height: 10%;
   top: 0;
   width: 100%;
-  margin-top: 25px;
+  padding-top: 2vw;
   position: fixed;
   z-index: 1;
 }
@@ -482,6 +482,8 @@ header {
   padding: 5px;
   position: absolute;
   cursor: pointer;
+}
+.ulTop li {
 }
 .ulTop li a:before {
   content: "";
